@@ -1,8 +1,12 @@
+import Upperbar from './components/Upperbar';
+import Lowerbar from "./components/Lowerbar"
+
 
 function App() {
   return (
     <div className="App">
-      <p>Quality Design Fashion Store</p>
+      <Upperbar />
+      <Lowerbar />
     </div>
   );
 }
