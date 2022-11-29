@@ -12,7 +12,16 @@ function LowDrabu() {
               '.jpg')}
             alt={item.title}
           />
-          <div>{item.number}</div>
+          <div className='detailContainer'>
+            <div>
+              <span style={{fontSize: "22px"}}>{item.title}</span>
+            </div>
+            <div className='detailChild'>
+              <span className='detailPrice'>{item.price} €</span>
+              <span className="button-5">ADD TO BASKET</span>
+            </div>
+            
+          </div>
         </div>
       ))}
     </div>
