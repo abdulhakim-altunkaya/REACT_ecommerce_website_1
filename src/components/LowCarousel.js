@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 function LowCarousel() {
     return (
-        <div class="carousel-wrapper">
+        <div className="carousel-wrapper">
             <Carousel infiniteLoop useKeyboardArrows autoPlay>
                 <div>
                     <img src="../img1.jpg" />

@@ -1,17 +1,25 @@
 import React from 'react';
-import LowCarousel from './LowCarousel';
-
+import { Route, Routes } from  "react-router-dom";
+import LowMain from './LowMain';
+import LowRanki from "./LowRanki";
+import LowCosme from "./LowCosme";
+import LowDrabu from "./LowDrabu";
+import LowAval from "./LowAval";
 
 
 function Lowerbar() {
   return (
     <div className="Lowerbar">
-      <div style={{alignContent: "center", alignItems: "center"}}>
-        <div style={{width: "30%", margin: "auto"}}>
-          <LowCarousel />
-        </div>
-      </div>
-      <p>some text here</p>
+
+        <Routes>
+          <Route path="/" element={ <LowMain /> } />
+          <Route path="/drabuziai" element={ <LowDrabu /> } />
+          <Route path="/rankineskuprines" element={ <LowRanki /> } />
+          <Route path="/kosmetika" element={ <LowCosme /> } />
+          <Route path="/avalyne" element={ <LowAval /> } />
+        </Routes>
+
+
     </div>
   )
 }
