@@ -5,7 +5,7 @@ import LowRanki from "./LowRanki";
 import LowCosme from "./LowCosme";
 import LowDrabu from "./LowDrabu";
 import LowAval from "./LowAval";
-
+import LowItem from "./LowItem";
 
 function Lowerbar() {
   return (
@@ -17,6 +17,7 @@ function Lowerbar() {
           <Route path="/rankineskuprines" element={ <LowRanki /> } />
           <Route path="/kosmetika" element={ <LowCosme /> } />
           <Route path="/avalyne" element={ <LowAval /> } />
+          <Route path="/items/:itemId" element={ <LowItem /> } />
         </Routes>
 
 
