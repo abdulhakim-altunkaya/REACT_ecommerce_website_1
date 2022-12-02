@@ -18,10 +18,9 @@ function LowItem() {
   
   
   return (
-    <div> hey hey
-      <p>{result.price}</p>
-      {/*
-              <div className="imageContainer" >
+    <div>
+      
+        <div className="imageContainer" >
           <img
             src={require('./Images/' + result.image +'.jpg')}
             alt={result.title}
@@ -37,7 +36,6 @@ function LowItem() {
             
           </div>
         </div>
-      */}
 
 
     </div>
