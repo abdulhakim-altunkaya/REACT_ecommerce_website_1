@@ -18,7 +18,7 @@ function LowDrabu() {
             </div>
             <div className='detailChild'>
               <span className='detailPrice'>{item.price} €</span>
-              <button className="detailButton" onClick={() => navigate(`/items/${item.number}`)}>ADD TO BASKET</button>
+              <button className="detailButton listButton" onClick={() => navigate(`/items/${item.number}`)}>Į krepšelį</button>
             </div>
             
           </div>

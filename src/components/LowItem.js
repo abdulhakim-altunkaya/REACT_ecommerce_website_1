@@ -17,25 +17,31 @@ function LowItem() {
 
   
   
-  return (
-    <div>
-      
-        <div className="imageContainer" >
-          <img
-            src={require('./Images/' + result.image +'.jpg')}
-            alt={result.title}
-          />
-          <div className='detailContainer'>
-            <div className='detailTitle'>
-              <span>{result.title}</span>
-            </div>
-            <div className='detailChild'>
-              <span className='detailPrice'>{result.price} €</span>
-              <button className="detailButton">ADD TO BASKET</button>
-            </div>
-            
+  return (      
+    <div className="itemContainer" >
+
+          <div className='itemArea1'>
+              <div className='itemImageDiv'>
+                <img src={require('./Images/' + result.image +'.jpg')} alt={result.title} className="itemImage"/>
+              </div>
+              <div className='itemDetailDiv'>
+                <div>
+                  <span> <h2>{result.title}</h2></span>
+                  <span className='priceTag'> {result.price} € </span>
+                </div>
+                <div>
+                  <button className='detailButton itemButton'> Į krepšelį </button>
+                </div>
+              </div>
           </div>
-        </div>
+
+          <div className='itemArea2'>
+            <main>PRODUCT INFORMATION: {result.description}</main>
+          </div>
+
+          <div className='itemArea3'>
+            <main>TECHNICAL DETAILS: {result.details.color}</main>
+          </div>
 
 
     </div>
