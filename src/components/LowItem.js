@@ -10,13 +10,37 @@ function LowItem() {
   //a new array of objects, we just need first object matching the condition. Thats why its "find"
 
   let result = a.find(product => product.number === itemNumber)
-  console.log(result.price);
-
   
+  const saveChart1 = () => {
+    sessionStorage.setItem(result.title, result.price);
+    console.log(sessionStorage.getItem(result.title))
+  }
 
+  const getData1 = () => {
+    console.log(sessionStorage.getItem(result.title));
+  }
+  
+  const cartList = []
+  const saveChart = () => {
+    let newItem = {
+      item: result.title,
+      price: result.price
+    }
+    let jsonNewItem = JSON.stringify(newItem);
+    localStorage.setItem(result.number, jsonNewItem);
+    console.log(localStorage.getItem(result.number))
+  }
 
-  
-  
+  const getData = () => {
+    let cartObj = localStorage.getItem(1);
+    //UNDEFINED: console.log(cartObj.price)
+    let cartObj2 = JSON.parse( cartObj );
+    console.log(cartObj2.price)
+  }
+  const getCartArray = () => {
+    let sto = { ...localStorage };
+    console.log(sto);
+  }
   return (      
     <div className="itemContainer" >
 
@@ -30,17 +54,17 @@ function LowItem() {
                   <span className='priceTag'> {result.price} € </span>
                 </div>
                 <div>
-                  <button className='detailButton itemButton'> Į krepšelį </button>
+                  <button className='detailButton itemButton' onClick={saveChart}> Į krepšelį </button>
                 </div>
               </div>
           </div>
 
           <div className='itemArea2'>
-            <main>PRODUCT INFORMATION: {result.description}</main>
+            <main onClick={getCartArray}>PRODUCT INFORMATION: {result.description}</main>
           </div>
 
           <div className='itemArea3'>
-            <main>TECHNICAL DETAILS: {result.details.color}</main>
+            <main onClick={getData}>TECHNICAL DETAILS: {result.details.color}</main>
           </div>
 
 
