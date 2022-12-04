@@ -10,17 +10,7 @@ function LowItem() {
   //a new array of objects, we just need first object matching the condition. Thats why its "find"
 
   let result = a.find(product => product.number === itemNumber)
-  
-  const saveChart1 = () => {
-    sessionStorage.setItem(result.title, result.price);
-    console.log(sessionStorage.getItem(result.title))
-  }
 
-  const getData1 = () => {
-    console.log(sessionStorage.getItem(result.title));
-  }
-  
-  const cartList = []
   const saveChart = () => {
     let newItem = {
       item: result.title,
