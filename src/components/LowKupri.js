@@ -2,7 +2,7 @@ import React from 'react'
 import { a } from "./a";
 import { useNavigate } from 'react-router-dom';
 
-function LowDrabu() {
+function LowKupri() {
   const navigate = useNavigate();
   return (
     <div className='generalContainer'>
@@ -28,4 +28,4 @@ function LowDrabu() {
   )
 }
 
-export default LowDrabu
+export default LowKupri;

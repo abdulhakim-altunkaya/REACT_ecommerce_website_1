@@ -8,10 +8,10 @@ function UpperbarBottom() {
   return (
     <div className='UpperbarBottom'>
 
-        <span onClick={ () => navigate("/rankineskuprines") } >RANKINĖS IR KUPRINĖS</span>
-        <span onClick={ () => navigate("/drabuziai") }>DRABUŽIAI</span>
-        <span onClick={ () => navigate("/avalyne") }>AVALYNĖ</span>
-        <span onClick={ () => navigate("/kosmetika") }>KOSMETIKA</span>
+        <span onClick={ () => navigate("/rankines") } >RANKINĖS</span>
+        <span onClick={ () => navigate("/kuprines") }>KUPRINĖS</span>
+        <span onClick={ () => navigate("/pinigines") }>PINIGINĖS</span>
+        <span onClick={ () => navigate("/information") }>NAUDINGA INFORMACIJA</span>
 
     </div>
   )

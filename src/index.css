@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 body {
   margin: 0;
@@ -185,6 +186,7 @@ scrollbar-width: none; */ /* Firefox *//*
   border-radius: 2px;
   padding: 5px;
   margin-top: 20px;
+
 }
 .itemArea1 {
   display: flex;
@@ -221,6 +223,16 @@ scrollbar-width: none; */ /* Firefox *//*
 .itemArea3 {
   padding-top: 20px;
   min-height: 15vh;
+}
+
+.cartArea {
+  font-family: 'Quicksand', sans-serif;
+}
+.cartImageArea {
+  max-width: 10%;
+}
+.cartItemImage {
+  max-width: 90%;
 }
 
 /* BUTTONS */

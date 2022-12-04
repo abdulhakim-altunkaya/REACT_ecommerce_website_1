@@ -2,10 +2,11 @@ import React from 'react';
 import { Route, Routes } from  "react-router-dom";
 import LowMain from './LowMain';
 import LowRanki from "./LowRanki";
-import LowCosme from "./LowCosme";
-import LowDrabu from "./LowDrabu";
-import LowAval from "./LowAval";
+import LowKupri from "./LowKupri";
+import LowPini from "./LowPini";
+import LowInfo from "./LowInfo";
 import LowItem from "./LowItem";
+import LowBasket from "./LowBasket";
 
 function Lowerbar() {
   return (
@@ -13,11 +14,12 @@ function Lowerbar() {
 
         <Routes>
           <Route path="/" element={ <LowMain /> } />
-          <Route path="/drabuziai" element={ <LowDrabu /> } />
-          <Route path="/rankineskuprines" element={ <LowRanki /> } />
-          <Route path="/kosmetika" element={ <LowCosme /> } />
-          <Route path="/avalyne" element={ <LowAval /> } />
+          <Route path="/kuprines" element={ <LowKupri /> } />
+          <Route path="/rankines" element={ <LowRanki /> } />
+          <Route path="/information" element={ <LowInfo /> } />
+          <Route path="/pinigines" element={ <LowPini /> } />
           <Route path="/items/:itemId" element={ <LowItem /> } />
+          <Route path="/cart" element={ <LowBasket /> } />
         </Routes>
 
 

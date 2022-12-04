@@ -13,8 +13,10 @@ function LowItem() {
 
   const saveChart = () => {
     let newItem = {
-      item: result.title,
-      price: result.price
+      title: result.title,
+      price: result.price,
+      image: result.image,
+      number: result.number
     }
     let jsonNewItem = JSON.stringify(newItem);
     localStorage.setItem(result.number, jsonNewItem);
@@ -27,10 +29,7 @@ function LowItem() {
     let cartObj2 = JSON.parse( cartObj );
     console.log(cartObj2.price)
   }
-  const getCartArray = () => {
-    let sto = { ...localStorage };
-    console.log(sto);
-  }
+
   return (      
     <div className="itemContainer" >
 
@@ -50,7 +49,7 @@ function LowItem() {
           </div>
 
           <div className='itemArea2'>
-            <main onClick={getCartArray}>PRODUCT INFORMATION: {result.description}</main>
+            <main>PRODUCT INFORMATION: {result.description}</main>
           </div>
 
           <div className='itemArea3'>
