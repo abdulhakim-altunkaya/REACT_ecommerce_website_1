@@ -228,12 +228,36 @@ scrollbar-width: none; */ /* Firefox *//*
 .cartArea {
   font-family: 'Quicksand', sans-serif;
 }
-.cartImageArea {
-  max-width: 10%;
+.cartListHeader{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cartList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 .cartItemImage {
-  max-width: 90%;
+  max-width: 50%;
 }
+.cartDeleteIcon {
+  max-width: 15%;
+}
+.cartInput {
+  max-height: 25px;
+  font-size: 20px;
+  width: 50%;
+}
+.cartList span, .cartList div, .cartListHeader span {
+  max-width: 12%;
+  min-width: 12%;
+  max-height: 20%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 
 /* BUTTONS */
 .itemButton {
