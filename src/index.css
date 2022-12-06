@@ -247,9 +247,16 @@ scrollbar-width: none; */ /* Firefox *//*
 }
 .cartItemImage {
   max-width: 50%;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.cartItemImage:hover {
+  border: solid 2px lightseagreen; 
 }
 .cartDeleteIcon {
   max-width: 15%;
+  vertical-align: top;
+  cursor: pointer;
 }
 .cartInput {
   max-height: 25px;

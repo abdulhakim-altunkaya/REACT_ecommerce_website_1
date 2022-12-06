@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 function LowBasket() {
-
+  const navigate = useNavigate();
   
 
   let basketObject = { ...localStorage };
@@ -10,14 +10,17 @@ function LowBasket() {
   const getData = () => {
     console.log(basketArray);
     console.log(JSON.parse(basketArray[0]));
+    for (let i = 0; i < localStorage.length; i++) {
+      let key = localStorage.key(i);
+      let item = localStorage.getItem(key);
+      console.log(JSON.parse(item));
+    }
   }
 
-  for (let i = 0; i < localStorage.length; i++) {
-    let key = localStorage.key(i);
-    let item = localStorage.getItem(key);
-    console.log(JSON.parse(item));
+  const deleteItem = (id) => {
+    localStorage.removeItem(id);
+    window.location.reload();
   }
-  
   return (
     <div className='cartArea'>
       <h1 onClick={getData}>Prekių krepšelis</h1>
@@ -40,16 +43,23 @@ function LowBasket() {
 
             <div className='cartList'>
 
-              <div className='cartImageArea'>
-                  <img src={require('./Images/' + JSON.parse(item).image +'.jpg')} alt={JSON.parse(item).title} className="cartItemImage"/>
+              <div>
+                  <img 
+                  onClick={() => navigate(`/items/${JSON.parse(item).number}`)}
+                  src={require('./Images/' + JSON.parse(item).image +'.jpg')} 
+                  alt={JSON.parse(item).title} 
+                  className="cartItemImage"/>
               </div>
               <span>{JSON.parse(item).number}</span>
-              <span className='cartTitleArea'>{JSON.parse(item).title}</span>
+              <span 
+              style={{cursor: "pointer"}}
+              onClick={() => navigate(`/items/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
               <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} Euro</span>
               <span>{JSON.parse(item).unit}</span>
               <span>{JSON.parse(item).unit*JSON.parse(item).price} Euro</span>
-              <div className='cartImageArea'>
-                  <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon"/>
+              <div>
+                  <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon" 
+                  onClick={() => deleteItem(JSON.parse(item).number)}/>
               </div>
 
 
