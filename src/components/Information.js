@@ -1,4 +1,11 @@
-<a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+import React from 'react'
+
+function Information() {
+  return (
+    <div>
+
+<a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
+</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 //DONE -- Add amount to item display and/OR basket area
 //DONE -- add delete button to basket area
@@ -11,3 +18,9 @@
 //inform user when something is inside the basket
 //DONE -- display basket area with map
 //DONE -- image*id*title * price * amount/updatable amount * delete button
+    main
+    </div>
+  )
+}
+
+export default Information;
