@@ -7,7 +7,7 @@ function LowItem() {
   let {itemId} = useParams();
   let itemNumber = Number(itemId)
   let [inputValue, setInputValue] = useState(1);
-
+  let [buttonText, setButtonText] = useState("Į krepšelį");
   //Here we dont use filter because filter returns a new array of objects. We dont want
   //a new array of objects, we just need first object matching the condition. Thats why its "find"
 
@@ -25,11 +25,12 @@ function LowItem() {
     let jsonNewItem = JSON.stringify(newItem);
     localStorage.setItem(result.number, jsonNewItem);
     window.location.reload();
+    setButtonText("Added \u2714");
+    setTimeout(() => {
+      setButtonText("Į krepšelį");
+    }, 2000);
   }
-  const addUnit = () => {
-    
-  }
-  const decrease
+
 
 
   return (      
@@ -44,15 +45,13 @@ function LowItem() {
                   <span> <h2>{result.title}</h2></span>
                   <span>
                     <span className='priceTag'> {result.price} €  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <input type="button" onClick={addUnit} value="-" className="plusMinusButtons" />
-                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} className="itemInput" /> 
-                    <input type="button" onClick={subtractUnit} value="+" className="plusMinusButtons" />
+                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} min="1" className="itemInput" /> 
                   </span>
 
                   
                 </div>
                 <div>
-                  <button className='detailButton itemButton' onClick={saveChart}> Į krepšelį </button>
+                  <button className='detailButton itemButton' onClick={saveChart}> {buttonText} </button>
                 </div>
               </div>
           </div>
@@ -62,7 +61,7 @@ function LowItem() {
           </div>
 
           <div className='itemArea3'>
-            <main>TECHNICAL DETAILS: {result.details.color}</main>
+            <main>TECHNICAL DETAILS: {result.details.color} </main>
           </div>
 
 
