@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 import { a } from "./a";
 import { useState } from 'react';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 function LowItem() {
   let {itemId} = useParams();
   let itemNumber = Number(itemId)
@@ -37,8 +40,25 @@ function LowItem() {
     <div className="itemContainer" >
 
           <div className='itemArea1'>
+
               <div className='itemImageDiv'>
-                <img src={require('./Images/' + result.image +'.jpg')} alt={result.title} className="itemImage"/>
+                <div className="carousel-wrapper" style={{width: "30vw"}}>
+                  <Carousel infiniteLoop useKeyboardArrows>
+                      <div>
+                          <img src={require('./Images/' + result.number +'/img1.jpg')} className="itemImage" />
+                      </div>
+                      <div>
+                          <img src={require('./Images/' + result.number +'/img2.jpg')} className="itemImage" />
+                      </div>
+                      <div>
+                          <img src={require('./Images/' + result.number +'/img3.jpg')} className="itemImage" />
+                      </div>
+                      <div>
+                          <img src={require('./Images/' + result.number +'/img4.jpg')} className="itemImage" />
+                      </div>
+                  </Carousel>
+                </div>
+
               </div>
               <div className='itemDetailDiv'>
                 <div>
@@ -62,6 +82,32 @@ function LowItem() {
 
           <div className='itemArea3'>
             <main>TECHNICAL DETAILS: {result.details.color} </main>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            <p>fwefwef</p>
+            
+          </div>
+
+          <div>
+
           </div>
 
 

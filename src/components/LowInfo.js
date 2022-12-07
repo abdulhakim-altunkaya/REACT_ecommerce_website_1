@@ -22,6 +22,7 @@ function LowInfo() {
 //DONE -- inform user when something is inside the basket
 //DONE -- display basket area with map
 //DONE -- image*id*title * price * amount/updatable amount * delete button
+//add image alt information
 }
 
 

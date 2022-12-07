@@ -13,11 +13,10 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .Upperbar {
-  min-height: 15vh;
+  min-height: 10vh;
   border-bottom: solid 2px lightgrey;
   display: flex;
   flex-direction: column;
@@ -25,11 +24,14 @@ body {
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top:0;
+  z-index: 100;
+  background-color: white;
 }
 .UpperbarTop {
   width: 80%;
-  height: 60%;
-  background-color: aquamarine;
+  min-height: 60%;
+  padding-top: 20px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,8 +59,8 @@ body {
 
 .UpperbarBottom {
   width: 80%;
-  height: 40%;
-  background-color: bisque;
+  min-height: 40%;
+
   font-family: 'Inter', sans-serif;
   font-size: 19px;
   display: flex;
@@ -79,7 +81,7 @@ body {
 }
 
 .Lowerbar {
-  min-height: 85vh;
+  min-height: 90vh;
   width: 80%;
   margin: auto;
 }
@@ -194,15 +196,15 @@ scrollbar-width: none; */ /* Firefox *//*
 .itemArea1 {
   display: flex;
   flex-direction: row;
-  background-color: #fa6400;
+
 }
 .itemImageDiv{
   min-width: 50%;
-  background-color: aqua;
+
 }
 .itemDetailDiv {
   min-width: 50%;
-  background-color: azure;
+
   display: flex;
   flex-direction: column;
 }
