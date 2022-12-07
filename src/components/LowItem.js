@@ -24,15 +24,13 @@ function LowItem() {
     }
     let jsonNewItem = JSON.stringify(newItem);
     localStorage.setItem(result.number, jsonNewItem);
-    console.log(localStorage.getItem(result.number))
+    window.location.reload();
   }
+  const addUnit = () => {
+    
+  }
+  const decrease
 
-  const getData = () => {
-    let cartObj = localStorage.getItem(1);
-    //UNDEFINED: console.log(cartObj.price)
-    let cartObj2 = JSON.parse( cartObj );
-    console.log(cartObj2.price)
-  }
 
   return (      
     <div className="itemContainer" >
@@ -44,8 +42,14 @@ function LowItem() {
               <div className='itemDetailDiv'>
                 <div>
                   <span> <h2>{result.title}</h2></span>
-                  <span className='priceTag'> {result.price} €  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} className="itemInput" /> </span>
+                  <span>
+                    <span className='priceTag'> {result.price} €  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input type="button" onClick={addUnit} value="-" className="plusMinusButtons" />
+                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} className="itemInput" /> 
+                    <input type="button" onClick={subtractUnit} value="+" className="plusMinusButtons" />
+                  </span>
+
+                  
                 </div>
                 <div>
                   <button className='detailButton itemButton' onClick={saveChart}> Į krepšelį </button>
@@ -58,7 +62,7 @@ function LowItem() {
           </div>
 
           <div className='itemArea3'>
-            <main onClick={getData}>TECHNICAL DETAILS: {result.details.color}</main>
+            <main>TECHNICAL DETAILS: {result.details.color}</main>
           </div>
 
 

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
 
 body {
   margin: 0;
@@ -36,6 +37,8 @@ body {
 .basketImage {
   display: flex;
   align-items: flex-end;
+  font-family: 'Cabin', sans-serif;
+  font-size: 28px;
 }
 .basketImage:hover {
   cursor: pointer;
@@ -214,11 +217,45 @@ scrollbar-width: none; */ /* Firefox *//*
   max-width: 80%;
   min-width: 80%;
 }
+
+
+
+.itemInputArea input {
+  
+}
 .itemInput {
-  height: 28px;
-  font-size: 20px;
-  width: 10%;
-  vertical-align:middle;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  font-size: 26px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.plusMinusButtons {
+  width: 50px;
+  height: 34px;
+  text-align: center;
+  font-size: 26px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+/*remove up and down arrows in itemInput input area*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
@@ -320,3 +357,29 @@ scrollbar-width: none; */ /* Firefox *//*
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+
+
+/*CART ICON*/
+#lblCartCount {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+.badge {
+padding-left: 9px;
+padding-right: 9px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+background-color: #c67605;
+}
+
+

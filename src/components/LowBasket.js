@@ -77,7 +77,7 @@ function LowBasket() {
     </div>
     :
       
-    <div style={{fontSize: "30px", textAlign: "center", fontFamily:"Trebuchet MS"}}>Add some items to your Basket</div>
+    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>No item in the basket yet</div>
 
     }
     </>
