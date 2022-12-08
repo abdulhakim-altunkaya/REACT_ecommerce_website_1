@@ -15,7 +15,7 @@ function LowInfo() {
 //DONE -- add delete button to basket area
 //DONE -- if basket is empty, warn the user
 //if local storage is littered, first maybe you can clean it, "Click to refresh button"
-//add 4 image carousel for each item
+//DONE -- add 4 image carousel for each item
 //connect email to website
 //add information about shipping
 //DONE -- inform user when something is added to the basket
@@ -23,14 +23,18 @@ function LowInfo() {
 //DONE -- display basket area with map
 //DONE -- image*id*title * price * amount/updatable amount * delete button
 //add image alt information
+//add address information, name and surname, and payment instructions to the basket component
 }
 
 
 
 <div className="numberInput">
-	<span className="numberMinus">-</span>
-	<input type="text" value="1"/>
-	<span className="numberPlus">+</span>
+  a lot of information:
+  shipment
+  items here are personal belongings, this is not a store. for this reason, there will be no facturas. 
+  return policy: contact the seller
+
+
 </div>
 
 

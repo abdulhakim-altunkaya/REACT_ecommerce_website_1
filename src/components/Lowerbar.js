@@ -9,6 +9,7 @@ import LowItem from "./LowItem";
 import LowBasket from "./LowBasket";
 
 function Lowerbar() {
+  
   return (
     <div className="Lowerbar">
 
