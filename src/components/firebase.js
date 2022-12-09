@@ -2,7 +2,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,6 +10,7 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "AIzaSyAqk42raVz4bRzytjDT26yDyHgHwFvnXkA",
   authDomain: "spalvotakuprine.firebaseapp.com",
+  databaseURL: "https://spalvotakuprine-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "spalvotakuprine",
   storageBucket: "spalvotakuprine.appspot.com",
   messagingSenderId: "272362493598",
@@ -21,5 +21,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const database = getDatabase(app);
 
-export const db = getDatabase(app);
+export { database };
