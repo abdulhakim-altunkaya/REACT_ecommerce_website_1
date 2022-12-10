@@ -376,3 +376,53 @@ background-color: #c67605;
 }
 
 
+/*FORM ELEMENT BASKET PAGE*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+.container form { 
+  max-width:420px; 
+  margin-top:20px; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background: white;
+  /*background:rgb(30,30,40);*/
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+.container textarea {
+  height: 150px;
+  line-height: 150%;
+  background: white;
+  /*background:rgb(30,30,40);*/
+  resize:vertical;
+}
+
+.formButtonBasket {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+.formButtonBasket:hover { background:#CC4949; }

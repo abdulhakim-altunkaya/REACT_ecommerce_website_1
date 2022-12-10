@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 function LowBasket() {
   const navigate = useNavigate();
@@ -29,10 +28,15 @@ function LowBasket() {
   }
 
   
-
+  //As there is window.location.reload() line down here, no need to use useEffect up.
   const deleteItem = (id) => {
     localStorage.removeItem(id);
     window.location.reload();
+  }
+
+
+  const sendOrder = () => {
+    console.log("order is sent");
   }
   return (
     <>
@@ -50,44 +54,53 @@ function LowBasket() {
         <span>Sum</span>
         <span>&nbsp;</span>
       </div>
+   
+      <div>
+        {basketArray.map((item, index) => (
+          <div key={index}>
+            <div className='cartList'>
 
-
-      
-          <div>
-            {basketArray.map((item, index) => (
-              <div key={index}>
-                <div className='cartList'>
-    
-                  <div>
-                      <img 
-                      onClick={() => navigate(`/items/${JSON.parse(item).number}`)}
-                      src={require('./Images/' + JSON.parse(item).image +'.jpg')} 
-                      alt={JSON.parse(item).title} 
-                      className="cartItemImage"/>
-                  </div>
-                  <span>{JSON.parse(item).number}</span>
-                  <span 
-                  style={{cursor: "pointer"}}
-                  onClick={() => navigate(`/items/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
-                  <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} Euro</span>
-                  <span>{JSON.parse(item).unit}</span>
-                  <span>{JSON.parse(item).unit*JSON.parse(item).price} Euro</span>
-                  <div>
-                      <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon" 
-                      onClick={() => deleteItem(JSON.parse(item).number)}/>
-                  </div>
-    
-                </div>
+              <div>
+                  <img 
+                  onClick={() => navigate(`/items/${JSON.parse(item).number}`)}
+                  src={require('./Images/' + JSON.parse(item).image +'.jpg')} 
+                  alt={JSON.parse(item).title} 
+                  className="cartItemImage"/>
               </div>
-            ))}
+              <span>{JSON.parse(item).number}</span>
+              <span 
+              style={{cursor: "pointer"}}
+              onClick={() => navigate(`/items/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
+              <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} Euro</span>
+              <span>{JSON.parse(item).unit}</span>
+              <span>{JSON.parse(item).unit*JSON.parse(item).price} Euro</span>
+              <div>
+                  <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon" 
+                  onClick={() => deleteItem(JSON.parse(item).number)}/>
+              </div>
+
+            </div>
           </div>
+        ))}
+      </div>
 
+      <div className="container">
+        <form>      
+          <input name="name" type="text" className="feedback-input" placeholder="Vardas Pavardė" />   
+          <input name="email" type="text" className="feedback-input" placeholder="Telefonas" />
+          <textarea name="text" className="feedback-input" placeholder="Adresas"></textarea>
+          <input type="submit" className='formButtonBasket' value="SUBMIT"/>
+        </form>
+      </div>
 
+      <div>
+        
+      </div>
 
     </div>
     :
       
-    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>No item in the basket yet</div>
+    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>Jūsų prekių krepšelis tuščias</div>
 
     }
     </>

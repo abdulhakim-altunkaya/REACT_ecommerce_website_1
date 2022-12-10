@@ -14,7 +14,7 @@ function LowInfo() {
 //DONE -- Add amount to item display and/OR basket area
 //DONE -- add delete button to basket area
 //DONE -- if basket is empty, warn the user
-//if local storage is littered, first maybe you can clean it, "Click to refresh button"
+//DONE -- if local storage is littered, first maybe you can clean it, "Click to refresh button"
 //DONE -- add 4 image carousel for each item
 //connect email to website
 //add information about shipping
