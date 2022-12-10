@@ -55,7 +55,7 @@ const database = getDatabase(app);
 
 
 **** 
-import { collection, addDoc, deleteDoc, doc, query, onSnapshot, orderBy, updateDoc } from './firebase';
+import { collection, addDoc, deleteDoc, doc, query, onSnapshot, orderBy, updateDoc } from '../firebase';
 const sub = async (e) => {
   e.preventDefault();
   try {
@@ -69,3 +69,50 @@ const sub = async (e) => {
     console.error("Error adding document: ", e);
   }
 }
+
+
+*****
+
+
+
+<div>
+<center>
+  <form style={{marginTop:"200px" }}
+  onSubmit={(event) => {sub(event)}}>
+    <input type="text" placeholder="your name"
+    onChange={(e)=>{Setname(e.target.value)}} />
+    <br/><br/>
+    <input type="number" placeholder="your age"
+    onChange={(e)=>{Setage(e.target.value)}}/>
+    <br/><br/>
+    <input type="text" placeholder="Course Enrolled"
+    onChange={(e)=>{Setcourse(e.target.value)}}/>
+    <br/><br/>
+    <button type="submit">Submit</button>
+  </form>
+</center>
+</div>
+<button onClick={sub}> FIRE </button>
+
+
+
+****
+
+function sub(userId, name, email, imageUrl) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+
+*** 
+***  
+const addDocument = (e) => {
+    e.preventDefault();
+    db.collection("newpeople").add({
+      Player: {name},
+      Title: {surname}
+    });
+  }
