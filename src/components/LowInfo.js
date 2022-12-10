@@ -24,6 +24,7 @@ function LowInfo() {
 //DONE -- image*id*title * price * amount/updatable amount * delete button
 //add image alt information
 //add address information, name and surname, and payment instructions to the basket component
+//add shipment price info or directly add shipment to the basket area
 }
 
 

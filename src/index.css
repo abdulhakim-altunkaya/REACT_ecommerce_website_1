@@ -380,7 +380,8 @@ background-color: #c67605;
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 .container form { 
   max-width:420px; 
-  margin-top:20px; }
+  margin-top:20px; 
+}
 
 .feedback-input {
   color:white;
@@ -413,7 +414,7 @@ background-color: #c67605;
 .formButtonBasket {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
+  background: rgb(17, 119, 17);
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -425,4 +426,17 @@ background-color: #c67605;
   margin-top:-4px;
   font-weight:700;
 }
-.formButtonBasket:hover { background:#CC4949; }
+.formButtonBasket:hover { background: rgb(7, 92, 7); }
+
+
+/*H1 STYLE BASKET AREA*/
+.seven {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}

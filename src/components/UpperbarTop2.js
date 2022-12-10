@@ -16,7 +16,7 @@ function UpperbarTop2() {
   longer than 100 character length. I said 80 to be on the safe side. Once production deployment is done, I can
   update this value to a more certain number */}
   let basketArray1 = localStorageValues.filter(item => typeof JSON.parse(item) === "object");
-  let basketArray = basketArray1.filter(item => item.length > 80 );
+  let basketArray = basketArray1.filter(item => item.length > 60 );
 
   let[basketNumber, setBasketNumber] = useState();
   

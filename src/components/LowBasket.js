@@ -42,7 +42,7 @@ function LowBasket() {
     <>
     {basketArray.length > 0 ?
     <div className='cartArea'>
-      
+
       <h1 onClick={getData}>Prekių krepšelis</h1>
 
       <div className='cartListHeader'>
@@ -85,16 +85,23 @@ function LowBasket() {
       </div>
 
       <div className="container">
+        Norėdami pateikti užsakymą: <br />
+        1) Užpildykite žemiau esančią formą <br />
+        2) Spustelėkite mygtuką pateikti <br />
+        3) Perveskite SUMĄ į šią banko sąskaitą per 3 dienas. <br />
+        4) Norėdami perkelti nuorodą, įveskite savo vardą <br />
+            <br /><br />
+        Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. Siuntos detales išsiųsime Jūsų el.pašto adresu.
         <form>      
           <input name="name" type="text" className="feedback-input" placeholder="Vardas Pavardė" />   
           <input name="email" type="text" className="feedback-input" placeholder="Telefonas" />
           <textarea name="text" className="feedback-input" placeholder="Adresas"></textarea>
-          <input type="submit" className='formButtonBasket' value="SUBMIT"/>
+          <input type="submit" className='formButtonBasket' value="pateikti užsakymą"/>
         </form>
       </div>
 
       <div>
-        
+
       </div>
 
     </div>
