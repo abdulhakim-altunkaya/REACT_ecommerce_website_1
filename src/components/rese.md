@@ -21,3 +21,39 @@ function UpperbarBottom() {
 }
 
 export default UpperbarBottom;
+
+
+*** 
+    for(let i=0; i<basketElements.length; i++) {
+      if (isNaN(basketElements[i]) === true) {
+        console.log("hello");
+      }
+    }
+
+****
+
+
+  useEffect(() => {
+    let basketElements = basketKeys.filter(item => item.length < 5);
+    let wholeObjects = Object.entries(basketObject);
+    let basketElements2 = wholeObjects.filter(item => isNaN(item[0]) == false);
+    let basketArrayTest2 = basketElements2.filter(item => item[0].length < 5);
+    for(let i=0; i<basketArrayTest2; i++) {
+      let basketArrayTest2 = basketArrayTest2[i].shift();
+    }
+  }, []);
+
+**** 
+  let basketObject = { ...localStorage };
+  let basketArray = [];
+  let basketArrayTest = Object.values(basketObject);
+  if (typeof JSON.parse(basketArrayTest[0]) === "string") {
+    console.log("it is string");
+  } else {
+    console.log("it is NOT string");
+  }
+  let basketArrayTest5 = basketArrayTest.filter(item => typeof JSON.parse(item) === "object");
+  console.log(basketArrayTest5);
+  let basketKeys = Object.keys(basketObject);
+
+****

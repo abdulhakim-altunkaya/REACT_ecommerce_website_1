@@ -52,7 +52,7 @@ export const a = [
         }
     },
     {
-        number: 7,
+        number: 5,
         title: 'Classy cheesy fruity juicy stinky nice bag',
         image: 'img7',
         price: 55,
