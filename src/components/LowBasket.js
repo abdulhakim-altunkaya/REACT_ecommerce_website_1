@@ -7,7 +7,7 @@ import LowBasketForm from './LowBasketForm';
 
 function LowBasket() {
   const navigate = useNavigate();
-  
+
   {/* double filtering to prevent possible errors if local storage is littered
   After getting values of local storage objects, the values that we want must be "object" type.
   If local storage is littered, then some values there will be "string" or "number" type. Thats how
@@ -40,6 +40,21 @@ function LowBasket() {
   const sendOrder = () => {
     console.log("order is sent");
   }
+
+  //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from child component by using function technique
+  let[basketStatusText, setBasketStatusText] = useState("Jūsų prekių krepšelis tuščias");
+  const handleOrderStatus = uuid => {
+    let item = {
+      itemDetails: (
+        <>
+          <span>Order is successful. Order Number is: </span>
+          <span style={{color:'lightGreen'}}> {uuid} </span>
+        </>
+      )
+    } 
+    setBasketStatusText(item.itemDetails);
+  };
+
   return (
     <>
     {basketArray.length > 0 ?
@@ -87,12 +102,12 @@ function LowBasket() {
       </div>
 
       <LowBasketSum />
-      <LowBasketForm />
+      <LowBasketForm handleOrderStatus={handleOrderStatus} />
 
     </div>
     :
       
-    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>Jūsų prekių krepšelis tuščias</div>
+    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>{basketStatusText}</div>
 
     }
     </>

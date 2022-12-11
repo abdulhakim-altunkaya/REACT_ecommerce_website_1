@@ -21,7 +21,8 @@ function LowBasketSum() {
       let n = 0;
       for (let i  = 0; i < basketArray.length; i++){
         let item = JSON.parse(basketArray[i]);
-        n = n + Number(item.price);
+        n = n + (Number(item.price) * Number(item.unit));
+        
       }
       total = n;
     }, [basketArray]);

@@ -4,7 +4,7 @@ import {db} from "../firebase";
 import { uid } from 'uid';
 import { set, ref } from 'firebase/database';
 
-function LowBasketForm() {
+function LowBasketForm({handleOrderStatus}) {
 
   let allLocalStorage = { ...localStorage };
   let localStorageValues = Object.values(allLocalStorage);
@@ -30,6 +30,8 @@ function LowBasketForm() {
     setEmail("");
     setAddress("");
     setPhone("");
+    localStorage.clear();
+    handleOrderStatus(uuid);
   }
 
   return (
