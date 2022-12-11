@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import LowBasketSum from "./LowBasketSum";
 import { useState, useEffect } from 'react';
+import LowBasketForm from './LowBasketForm';
+
 
 function LowBasket() {
   const navigate = useNavigate();
@@ -29,15 +31,11 @@ function LowBasket() {
     }
   }
 
-  
   //As there is window.location.reload() line down here, no need to use useEffect up.
   const deleteItem = (id) => {
     localStorage.removeItem(id);
     window.location.reload();
-  }
-
-
-  
+  } 
 
   const sendOrder = () => {
     console.log("order is sent");
@@ -89,27 +87,7 @@ function LowBasket() {
       </div>
 
       <LowBasketSum />
-
-      <div className="container">
-        <h1 className="textEffect1"> Užsakymo Pateikimas </h1>
-        1) Užpildykite žemiau esančią formą <br />
-        2) Spustelėkite mygtuką pateikti <br />
-        3) Perveskite SUM į šią banko sąskaitą per 3 dienas. <br />
-        4) Norėdami perkelti nuorodą, įveskite savo vardą <br />
-            <br /><br />
-        Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. Siuntos detales išsiųsime Jūsų el.pašto adresu.
-        <form>      
-          <input name="name" type="text" className="feedback-input" placeholder="Vardas Pavardė" />   
-          <input name="email" type="text" className="feedback-input" placeholder="Telefonas" />
-          <input name="email" type="text" className="feedback-input" placeholder="El. paštas" />
-          <textarea name="text" className="feedback-input" placeholder="Adresas"></textarea>
-          <input type="submit" className='formButtonBasket' value="pateikti užsakymą"/>
-        </form>
-      </div>
-
-      <div>
-
-      </div>
+      <LowBasketForm />
 
     </div>
     :

@@ -367,7 +367,7 @@ background-color: #c67605;
 }
 
 .feedback-input {
-  color:white;
+  color:black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -393,7 +393,6 @@ background-color: #c67605;
   /*background:rgb(30,30,40);*/
   resize:vertical;
 }
-
 .formButtonBasket {
   font-family: 'Quicksand', sans-serif;
   width: 100%;
@@ -401,7 +400,7 @@ background-color: #c67605;
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
+  color:black;
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;

@@ -25,6 +25,13 @@ function LowInfo() {
 //add image alt information
 //add address information, name and surname, and payment instructions to the basket component
 //add shipment price info or directly add shipment to the basket area
+//Make sure people with empty basket cannot order anything.
+//Make sure people cannot order more than 20 elements
+//Make sure people from same id add things like a bot
+//Make sure people from same id cannot order very fast
+//Make sure each order will take at least two mins to prevent bots
+//When user submits an orders, display a stylish alert or change button or change text style
+//In the future you can add a payment option without the need for backend server
 }
 
 
