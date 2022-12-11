@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import LowBasketSum from "./LowBasketSum";
+import { useState, useEffect } from 'react';
 
 function LowBasket() {
   const navigate = useNavigate();
@@ -35,6 +37,8 @@ function LowBasket() {
   }
 
 
+  
+
   const sendOrder = () => {
     console.log("order is sent");
   }
@@ -48,10 +52,10 @@ function LowBasket() {
       <div className='cartListHeader'>
         <span>&nbsp;</span>
         <span>Item Id</span>
-        <span>Title</span>
-        <span style={{paddingLeft: "10px"}}>Price</span>
-        <span>Unit</span>
-        <span>Sum</span>
+        <span>Prekė</span>
+        <span style={{paddingLeft: "6px"}}>Vieneto kaina</span>
+        <span>Kiekis</span>
+        <span>Iš viso</span>
         <span>&nbsp;</span>
       </div>
    
@@ -84,17 +88,20 @@ function LowBasket() {
         ))}
       </div>
 
+      <LowBasketSum />
+
       <div className="container">
-        Norėdami pateikti užsakymą: <br />
+        <h1 className="textEffect1"> Užsakymo Pateikimas </h1>
         1) Užpildykite žemiau esančią formą <br />
         2) Spustelėkite mygtuką pateikti <br />
-        3) Perveskite SUMĄ į šią banko sąskaitą per 3 dienas. <br />
+        3) Perveskite SUM į šią banko sąskaitą per 3 dienas. <br />
         4) Norėdami perkelti nuorodą, įveskite savo vardą <br />
             <br /><br />
         Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. Siuntos detales išsiųsime Jūsų el.pašto adresu.
         <form>      
           <input name="name" type="text" className="feedback-input" placeholder="Vardas Pavardė" />   
           <input name="email" type="text" className="feedback-input" placeholder="Telefonas" />
+          <input name="email" type="text" className="feedback-input" placeholder="El. paštas" />
           <textarea name="text" className="feedback-input" placeholder="Adresas"></textarea>
           <input type="submit" className='formButtonBasket' value="pateikti užsakymą"/>
         </form>
@@ -114,4 +121,4 @@ function LowBasket() {
   )
 }
 
-export default LowBasket
+export default LowBasket;

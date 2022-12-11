@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
 
 body {
   margin: 0;
@@ -220,11 +221,6 @@ scrollbar-width: none; */ /* Firefox *//*
   min-width: 80%;
 }
 
-
-
-.itemInputArea input {
-  
-}
 .itemInput {
   width: 70px;
   height: 30px;
@@ -236,21 +232,6 @@ scrollbar-width: none; */ /* Firefox *//*
   margin-top: 5px;
   margin-bottom: 6px;
 }
-
-.plusMinusButtons {
-  cursor: pointer;
-  width: 50px;
-  height: 34px;
-  text-align: center;
-  font-size: 26px;
-  border:1px solid #ddd;
-  border-radius:4px;
-  vertical-align: top;
-  margin-top: 5px;
-  margin-bottom: 6px;
-}
-
-
 
 .itemArea2 {
   padding-top: 20px;
@@ -269,6 +250,8 @@ scrollbar-width: none; */ /* Firefox *//*
   flex-direction: row;
   font-size: 20px;
   font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .cartList {
   margin-top: 20px;
@@ -412,7 +395,7 @@ background-color: #c67605;
 }
 
 .formButtonBasket {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   width: 100%;
   background: rgb(17, 119, 17);
   border-radius:5px;
@@ -430,13 +413,11 @@ background-color: #c67605;
 
 
 /*H1 STYLE BASKET AREA*/
-.seven {
-text-align: center;
-    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
-    text-transform: uppercase;
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-template-rows: 27px 0;
-    grid-gap: 20px;
-    align-items: center;
+.textEffect1, .cartArea h1 {
+  text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 3px;
+  color: lightcoral;
 }
+
+
