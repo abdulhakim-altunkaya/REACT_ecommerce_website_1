@@ -16,7 +16,7 @@ function LowInfo() {
 //DONE -- if basket is empty, warn the user
 //DONE -- if local storage is littered, first maybe you can clean it, "Click to refresh button"
 //DONE -- add 4 image carousel for each item
-//connect email to website
+//DONE -- connect firebase realtime database to website
 //add information about shipping
 //DONE -- inform user when something is added to the basket
 //DONE -- inform user when something is inside the basket
@@ -30,8 +30,10 @@ function LowInfo() {
 //Make sure people from same id add things like a bot
 //Make sure people from same id cannot order very fast
 //Make sure each order will take at least two mins to prevent bots
-//When user submits an orders, display a stylish alert or change button or change text style
+//When user submits an orders, display a stylish alert, displaying their order number with UUID or change button or change text style
 //In the future you can add a payment option without the need for backend server
+//Create an admin page to view orders, add a save status button next to each order
+
 }
 
 

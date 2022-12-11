@@ -5,6 +5,12 @@ import { uid } from 'uid';
 import { set, ref } from 'firebase/database';
 
 function LowBasketForm() {
+
+  let allLocalStorage = { ...localStorage };
+  let localStorageValues = Object.values(allLocalStorage);
+  let basketArray1 = localStorageValues.filter(item => typeof JSON.parse(item) === "object");
+  let basketArray = basketArray1.filter(item => item.length > 60 );
+
   let[fullName, setFullName] = useState("");
   let[email, setEmail] = useState("");
   let[address, setAddress] = useState("");
@@ -17,9 +23,13 @@ function LowBasketForm() {
       FullName: fullName,
       Telephone: phone,
       Email: email,
-      Address: address
+      Address: address,
+      Order: basketArray
     });
-    e.target.reset();
+    setFullName("");
+    setEmail("");
+    setAddress("");
+    setPhone("");
   }
 
   return (
