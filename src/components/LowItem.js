@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { a } from "./a";
 import { useState } from 'react';
+import Modal from "./Modal";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -11,28 +12,35 @@ function LowItem() {
   let itemNumber = Number(itemId)
   let [inputValue, setInputValue] = useState(1);
   let [buttonText, setButtonText] = useState("Į krepšelį");
+  const [isOpen, setIsOpen] = useState(false);
   //Here we dont use filter because filter returns a new array of objects. We dont want
   //a new array of objects, we just need first object matching the condition. Thats why its "find"
 
   let result = a.find(product => product.number === itemNumber)
 
   const saveChart = () => {
-    let newItem = {
-      title: result.title,
-      price: result.price,
-      unit: inputValue,
-      image: result.image,
-      number: result.number
-
+    if(inputValue > 10) {
+      setIsOpen(true);
+      return;
+    } else {
+      let newItem = {
+        title: result.title,
+        price: result.price,
+        unit: inputValue,
+        image: result.image,
+        number: result.number
+      }
+      let jsonNewItem = JSON.stringify(newItem);
+      localStorage.setItem(result.number, jsonNewItem);
+      window.location.reload();
+      setButtonText("Added \u2714");
+      setTimeout(() => {
+        setButtonText("Į krepšelį");
+      }, 3000);
     }
-    let jsonNewItem = JSON.stringify(newItem);
-    localStorage.setItem(result.number, jsonNewItem);
-    window.location.reload();
-    setButtonText("Added \u2714");
-    setTimeout(() => {
-      setButtonText("Į krepšelį");
-    }, 2000);
+
   }
+
 
 
 
@@ -65,7 +73,8 @@ function LowItem() {
                   <span> <h2>{result.title}</h2></span>
                   <span>
                     <span className='priceTag'> {result.price} €  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} min="1" className="itemInput" /> 
+                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} 
+                      min="1" max="10" className="itemInput" /> 
                   </span>
 
                   
@@ -110,7 +119,7 @@ function LowItem() {
 
           </div>
 
-
+          {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
   )
 }

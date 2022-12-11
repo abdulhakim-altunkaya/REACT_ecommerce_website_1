@@ -17,7 +17,6 @@ function LowInfo() {
 //DONE -- if local storage is littered, first maybe you can clean it, "Click to refresh button"
 //DONE -- add 4 image carousel for each item
 //DONE -- connect firebase realtime database to website
-//add information about shipping
 //DONE -- inform user when something is added to the basket
 //DONE -- inform user when something is inside the basket
 //DONE -- display basket area with map
@@ -25,8 +24,12 @@ function LowInfo() {
 //add image alt information
 //add address information, name and surname, and payment instructions to the basket component
 //add shipment price info or directly add shipment to the basket area
-//Make sure people with empty basket cannot order anything.
-//Make sure people cannot order more than 20 elements
+//DONE -- Make sure people with empty basket cannot order anything.
+//Replace alert box with modal box
+//https://www.findajobingermany.de/ register in if not included in posting
+//Contact form for asking questions
+//Make order submitting message more detailed and nicer
+//DONE -- Make sure people cannot order more than 20 elements
 //Make sure people from same id add things like a bot
 //Make sure people from same id cannot order very fast
 //Make sure each order will take at least two mins to prevent bots
@@ -43,7 +46,12 @@ function LowInfo() {
   shipment
   items here are personal belongings, this is not a store. for this reason, there will be no facturas. 
   return policy: contact the seller
-
+  <p>
+  Credit for Modal Page: <strong>Francisco Mendes </strong>  
+  (<a href="https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc">https://dev.to</a>)
+   
+  </p>
+  
 
 </div>
 

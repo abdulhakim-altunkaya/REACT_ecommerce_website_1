@@ -9,9 +9,6 @@ function App() {
         <Upperbar />
         <Lowerbar />
       </Router>
-
-      
-
     </div>
   );
 }

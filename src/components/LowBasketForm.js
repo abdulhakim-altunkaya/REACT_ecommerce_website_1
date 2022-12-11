@@ -17,21 +17,26 @@ function LowBasketForm({handleOrderStatus}) {
   let[phone, setPhone] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const uuid = uid();
-    set(ref(db, `/${uuid}`), {
-      FullName: fullName,
-      Telephone: phone,
-      Email: email,
-      Address: address,
-      Order: basketArray
-    });
-    setFullName("");
-    setEmail("");
-    setAddress("");
-    setPhone("");
-    localStorage.clear();
-    handleOrderStatus(uuid);
+    if(basketArray.length < 1) {
+      alert("Krepšelyje turi būti bent viena prekė");
+    } else {
+      e.preventDefault();
+      const uuid = uid();
+      set(ref(db, `/${uuid}`), {
+        FullName: fullName,
+        Telephone: phone,
+        Email: email,
+        Address: address,
+        Order: basketArray
+      });
+      setFullName("");
+      setEmail("");
+      setAddress("");
+      setPhone("");
+      localStorage.clear();
+      handleOrderStatus(uuid);
+    }
+
   }
 
   return (
@@ -42,7 +47,13 @@ function LowBasketForm({handleOrderStatus}) {
         3) Perveskite suma į šią banko sąskaitą per 3 dienas. <br />
         4) Norėdami perkelti nuorodą, įveskite savo vardą <br />
             <br /><br />
-        Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. Siuntos detales išsiųsime Jūsų el.pašto adresu.
+        Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. <br /><br />
+        Prekės siunčiamos su Omniva. Adreso laukelyje įveskite Omniva automatą, iš kurio norite 
+        pasiimti prekę. Už siuntimą reikia sumokėti 3 eurus. Galite sumokėti 3 eurus prie visos 
+        aukščiau nurodytos kainos ir atlikti pavedimą. <br /><br />
+        <p>International shipping: If you are not living in Lithuania but in another EU/EEA country, please 
+          add 10 euros to the total price above and make the transfer to the above mentioned bank account. 
+          Items will be shipped within 3 work days.</p>
         <form onSubmit={handleSubmit}>      
           <input name="name" type="text" className="feedback-input" 
             placeholder="Vardas Pavardė" value={fullName} onChange={e => setFullName(e.target.value)} />   
