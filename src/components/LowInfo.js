@@ -25,8 +25,10 @@ function LowInfo() {
 //add address information, name and surname, and payment instructions to the basket component
 //add shipment price info or directly add shipment to the basket area
 //DONE -- Make sure people with empty basket cannot order anything.
-//Replace alert box with modal box
+//DONE -- Replace alert box with modal box
 //https://www.findajobingermany.de/ register in if not included in posting
+//proxify register
+//find other employment services in for sweden, norway
 //Contact form for asking questions
 //Make order submitting message more detailed and nicer
 //DONE -- Make sure people cannot order more than 20 elements
@@ -49,7 +51,10 @@ function LowInfo() {
   <p>
   Credit for Modal Page: <strong>Francisco Mendes </strong>  
   (<a href="https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc">https://dev.to</a>)
-   
+  </p>
+  <p>
+    Credit for Green Tick Icon: 
+    <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Aldo Cervantes - Flaticon</a>
   </p>
   
 

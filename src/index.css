@@ -334,6 +334,25 @@ scrollbar-width: none; */ /* Firefox *//*
   transform: translateY(0);
 }
 
+/*ORDER SUCCESSFUL AREA*/
+.orderSuccessfulAreaParentDiv{
+  font-size: 26px;
+  padding-top: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.orderSuccessfulArea {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.orderSuccessfulAreaImg {
+  max-width:20%;
+}
+.orderSuccessfulAreaDetails {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 
 /*CART ICON*/

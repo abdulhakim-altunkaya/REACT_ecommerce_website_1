@@ -41,15 +41,27 @@ function LowBasket() {
     console.log("order is sent");
   }
 
-  //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from child component by using function technique
+  //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from LowBasketForm by using function technique
   let[basketStatusText, setBasketStatusText] = useState("Jūsų prekių krepšelis tuščias");
   const handleOrderStatus = uuid => {
     let item = {
       itemDetails: (
-        <>
-          <span>Order is successful. Order Number is: </span>
-          <span style={{color:'lightGreen'}}> {uuid} </span>
-        </>
+        <div className='orderSuccessfulArea'>
+          <img src={require('../images/icons/greentick.png')} 
+            alt="Green Tick Icon" className='orderSuccessfulAreaImg' />
+          <div className='orderSuccessfulAreaDetails'>
+            <span>Užsakymas sėkmingas </span>
+            <span>Užsakymo numeris: <i style={{color:'green'}}> {uuid} </i > </span>
+            <span>Užsakymo suma: </span>
+          </div>
+          <div className='orderSuccessfulAreaDetails'>
+            <span>Order is successful</span>
+            <span>Order Number: {uuid} </span>
+            <span>Order sum: </span>
+          </div>
+
+          
+        </div>
       )
     } 
     setBasketStatusText(item.itemDetails);
@@ -107,7 +119,7 @@ function LowBasket() {
     </div>
     :
       
-    <div style={{fontSize: "30px", paddingTop:"20px", fontFamily:"Trebuchet MS"}}>{basketStatusText}</div>
+    <div className='orderSuccessfulAreaParentDiv'>{basketStatusText}</div>
 
     }
     </>
