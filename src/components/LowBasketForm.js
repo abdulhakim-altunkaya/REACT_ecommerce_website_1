@@ -11,30 +11,52 @@ function LowBasketForm({handleOrderStatus}) {
   let basketArray1 = localStorageValues.filter(item => typeof JSON.parse(item) === "object");
   let basketArray = basketArray1.filter(item => item.length > 60 );
 
+  {/*getting sum of the basket*/}
+  let[basketSum, setBasketSum] = useState();
+  let total = 0;
+  useEffect(() => {
+    let n = 0;
+    for (let i  = 0; i < basketArray.length; i++){
+      let item = JSON.parse(basketArray[i]);
+      n = n + (Number(item.price) * Number(item.unit));
+    }
+    total = n;
+  }, [basketArray]);
+  useEffect(() => {
+    setBasketSum(total);
+  }, [basketArray]);
+
+
+
   let[fullName, setFullName] = useState("");
   let[email, setEmail] = useState("");
   let[address, setAddress] = useState("");
   let[phone, setPhone] = useState("");
+  let[orderDate, setOrderDate] = useState("");
 
   const handleSubmit = (e) => {
+    const orderMoment = JSON.stringify(new Date());
     if(basketArray.length < 1) {
       alert("Krepšelyje turi būti bent viena prekė");
     } else {
       e.preventDefault();
+      setOrderDate(orderMoment);
+      console.log(orderDate);
       const uuid = uid();
       set(ref(db, `/${uuid}`), {
         FullName: fullName,
         Telephone: phone,
         Email: email,
         Address: address,
-        Order: basketArray
+        Date: orderMoment,
+        Order: basketArray,
       });
       setFullName("");
       setEmail("");
       setAddress("");
       setPhone("");
       localStorage.clear();
-      handleOrderStatus(uuid);
+      handleOrderStatus(uuid, basketSum, fullName, orderMoment);
     }
 
   }
@@ -56,13 +78,14 @@ function LowBasketForm({handleOrderStatus}) {
           Items will be shipped within 3 work days.</p>
         <form onSubmit={handleSubmit}>      
           <input name="name" type="text" className="feedback-input" 
-            placeholder="Vardas Pavardė" value={fullName} onChange={e => setFullName(e.target.value)} />   
+            placeholder="Vardas Pavardė" value={fullName} onChange={e => setFullName(e.target.value)} required/>   
           <input name="phone" type="text" className="feedback-input" 
-            placeholder="Telefonas" value={phone} onChange={e => setPhone(e.target.value)}/>
-          <input name="email" type="text" className="feedback-input" 
-            placeholder="El. paštas" value={email} onChange={e => setEmail(e.target.value)}/>
+            placeholder="Telefonas" value={phone} onChange={e => setPhone(e.target.value)} required/>
+          <input name="email" type="email" className="feedback-input" 
+            placeholder="El. paštas" value={email} onChange={e => setEmail(e.target.value)} 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
           <textarea name="text" className="feedback-input" 
-            placeholder="Adresas" value={address} onChange={e => setAddress(e.target.value)}> </textarea>
+            placeholder="Adresas" value={address} onChange={e => setAddress(e.target.value)} required> </textarea>
           <input type="submit" className='formButtonBasket' value="pateikti užsakymą"/>
         </form>
     </div>

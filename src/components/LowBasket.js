@@ -21,6 +21,8 @@ function LowBasket() {
   let basketArray1 = localStorageValues.filter(item => typeof JSON.parse(item) === "object");
   let basketArray = basketArray1.filter(item => item.length > 60 );
 
+
+
   const getData = () => {
     console.log(basketArray);
     console.log(JSON.parse(basketArray[0]));
@@ -43,7 +45,7 @@ function LowBasket() {
 
   //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from LowBasketForm by using function technique
   let[basketStatusText, setBasketStatusText] = useState("Jūsų prekių krepšelis tuščias");
-  const handleOrderStatus = uuid => {
+  const handleOrderStatus = (uuid, basketSum, fullName, orderMoment) => {
     let item = {
       itemDetails: (
         <div className='orderSuccessfulArea'>
@@ -52,12 +54,15 @@ function LowBasket() {
           <div className='orderSuccessfulAreaDetails'>
             <span>Užsakymas sėkmingas </span>
             <span>Užsakymo numeris: <i style={{color:'green'}}> {uuid} </i > </span>
-            <span>Užsakymo suma: </span>
+            <span>Užsakymo suma: {basketSum} € </span>
+            <span>Pirkėjas: {fullName}</span>
           </div>
           <div className='orderSuccessfulAreaDetails'>
             <span>Order is successful</span>
-            <span>Order Number: {uuid} </span>
-            <span>Order sum: </span>
+            <span>Order Number: <i style={{color:'green'}}> {uuid} </i > </span>
+            <span>Order sum: {basketSum} €</span>
+            <span>Buyer: {fullName}</span>
+            <span>Date: {JSON.parse(orderMoment).slice(0,10)}</span>
           </div>
 
           
@@ -100,9 +105,9 @@ function LowBasket() {
               <span 
               style={{cursor: "pointer"}}
               onClick={() => navigate(`/items/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
-              <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} Euro</span>
+              <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} €</span>
               <span>{JSON.parse(item).unit}</span>
-              <span>{JSON.parse(item).unit*JSON.parse(item).price} Euro</span>
+              <span>{JSON.parse(item).unit*JSON.parse(item).price} €</span>
               <div>
                   <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon" 
                   onClick={() => deleteItem(JSON.parse(item).number)}/>

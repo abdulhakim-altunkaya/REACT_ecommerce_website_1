@@ -38,7 +38,11 @@ function LowInfo() {
 //When user submits an orders, display a stylish alert, displaying their order number with UUID or change button or change text style
 //In the future you can add a payment option without the need for backend server
 //Create an admin page to view orders, add a save status button next to each order
-
+//DONE -- input value select when focused, unit input area in Item component
+//put a limit on the size of the order, for example prevent 1000+ orders
+//Connect main carousel to the item page
+//Add order detail page, just like basket component, but there will not be form submitting part
+//add form validation tools to check email, name surname, textarea,  and phone numbers
 }
 
 

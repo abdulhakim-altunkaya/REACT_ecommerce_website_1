@@ -73,7 +73,9 @@ function LowItem() {
                   <span> <h2>{result.title}</h2></span>
                   <span>
                     <span className='priceTag'> {result.price} €  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} 
+                    <input type="number" 
+                      value={inputValue} onChange={e => setInputValue(e.target.value)} 
+                      onFocus={(e) => e.target.select()}
                       min="1" max="10" className="itemInput" /> 
                   </span>
 

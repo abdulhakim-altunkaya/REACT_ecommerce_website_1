@@ -283,7 +283,12 @@ scrollbar-width: none; */ /* Firefox *//*
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
+input:required:focus:invalid {
+  background: lightpink;
+}
+textarea:required:focus:invalid {
+  background: lightpink;
+}
 
 /* BUTTONS */
 .itemButton {
