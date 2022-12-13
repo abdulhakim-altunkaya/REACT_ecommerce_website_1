@@ -43,6 +43,8 @@ function LowInfo() {
 //Connect main carousel to the item page
 //Add order detail page, just like basket component, but there will not be form submitting part
 //add form validation tools to check email, name surname, textarea,  and phone numbers
+//DONE -- Create a footer component
+//Detail footer component and connect them to relavant parts
 }
 
 
@@ -57,8 +59,10 @@ function LowInfo() {
   (<a href="https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc">https://dev.to</a>)
   </p>
   <p>
-    Credit for Green Tick Icon: 
+    Credit for Green Tick and Instagram Icon: 
     <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Aldo Cervantes - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+
   </p>
   
 

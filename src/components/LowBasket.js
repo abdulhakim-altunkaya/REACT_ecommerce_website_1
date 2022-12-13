@@ -45,7 +45,7 @@ function LowBasket() {
 
   //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from LowBasketForm by using function technique
   let[basketStatusText, setBasketStatusText] = useState("Jūsų prekių krepšelis tuščias");
-  const handleOrderStatus = (uuid, basketSum, fullName, orderMoment) => {
+  const handleOrderStatus = (uuid, basketSum, fullName, orderMoment, address, phone) => {
     let item = {
       itemDetails: (
         <div className='orderSuccessfulArea'>
@@ -56,13 +56,19 @@ function LowBasket() {
             <span>Užsakymo numeris: <i style={{color:'green'}}> {uuid} </i > </span>
             <span>Užsakymo suma: {basketSum} € </span>
             <span>Pirkėjas: {fullName}</span>
+            <span>Data: {JSON.parse(orderMoment).slice(0,10)}</span>
+            <span>Telefonas: {phone}</span>
+            <span>Addresas: {address}</span>
           </div>
+          <br />
           <div className='orderSuccessfulAreaDetails'>
             <span>Order is successful</span>
             <span>Order Number: <i style={{color:'green'}}> {uuid} </i > </span>
             <span>Order sum: {basketSum} €</span>
             <span>Buyer: {fullName}</span>
             <span>Date: {JSON.parse(orderMoment).slice(0,10)}</span>
+            <span>Telephone: {phone}</span>
+            <span>Address: {address}</span>
           </div>
 
           

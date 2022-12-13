@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
   margin: 0;
@@ -92,7 +93,7 @@ body {
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 18px;
   height: 12px;
 }
   
@@ -348,7 +349,7 @@ textarea:required:focus:invalid {
 .orderSuccessfulArea {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
 }
 .orderSuccessfulAreaImg {
   max-width:20%;
@@ -441,6 +442,61 @@ background-color: #c67605;
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 3px;
   color: lightcoral;
+}
+
+/*FOOTER AREA*/
+.mainFooter {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  flex-direction: column;
+  background-color: #242329;
+  color: #fcfcfc;
+  margin-top: 10px;
+  min-height: 29vh;
+  max-height: 29vh;
+}
+.footerUp {
+  min-height: 24vh;
+  max-height: 24vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.footerSlogan {
+  font-family: 'Kaushan Script', cursive;
+}
+.footerUpDiv1{
+  
+  flex-grow: 2;
+}
+.footerUpDiv2 {
+  padding-top: 10px;
+  flex-grow: 1;
+}
+.footerBottom{
+  min-height: 5vh;
+  max-height: 5vh;
+  font-size: 12px;
+  border-top: solid 1px palegoldenrod;
+  width: 80%;
+  margin: auto;
+}
+.footerButton {
+  background-color: #242329;
+  color: #fcfcfc;
+  border: 2px whitesmoke solid;
+  border-radius: 4px;
+  width: 40%;
+  height: 5vh;
+}
+.footerButton:hover {
+  font-weight: bolder;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.footerIcons {
+  width: 47px;
+  cursor: pointer;
 }
 
 

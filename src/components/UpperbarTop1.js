@@ -6,8 +6,7 @@ function UpperbarTop1() {
   
   return (
     <div className='heading' onClick={() => navigate("/")}>
-      SPALVOTA <span style={{color: "red"}}>KUPRINĖ</span>
-
+      SPALVOTA <span style={{color: "red"}}>KUPRINĖ</span>  
     </div>
   )
 }

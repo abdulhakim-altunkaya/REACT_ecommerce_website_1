@@ -56,7 +56,7 @@ function LowBasketForm({handleOrderStatus}) {
       setAddress("");
       setPhone("");
       localStorage.clear();
-      handleOrderStatus(uuid, basketSum, fullName, orderMoment);
+      handleOrderStatus(uuid, basketSum, fullName, orderMoment, address, phone);
     }
 
   }
