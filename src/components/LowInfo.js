@@ -50,6 +50,7 @@ function LowInfo() {
 
 
 <div className="numberInput">
+  <h1>test test test</h1>
   a lot of information:
   shipment
   items here are personal belongings, this is not a store. for this reason, there will be no facturas. 
