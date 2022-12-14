@@ -498,5 +498,8 @@ background-color: #c67605;
   width: 47px;
   cursor: pointer;
 }
-
-
+.mainCarouselDiv {
+  border:#c85000 1px solid;
+  width: 45%;
+  margin: auto;
+}

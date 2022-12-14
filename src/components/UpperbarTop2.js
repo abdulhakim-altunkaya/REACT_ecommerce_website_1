@@ -1,5 +1,5 @@
 import React from 'react';
-import basketImage from "../images/basket.png";
+import basketImage from "../images/icons/basket.png";
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 

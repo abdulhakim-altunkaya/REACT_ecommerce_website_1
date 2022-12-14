@@ -53,16 +53,16 @@ function LowItem() {
                 <div className="carousel-wrapper" style={{width: "30vw"}}>
                   <Carousel infiniteLoop useKeyboardArrows>
                       <div>
-                          <img src={require('./Images/' + result.number +'/img1.jpg')} className="itemImage" />
+                          <img src={require('../images/' + result.number +'/img1.jpg')} className="itemImage" />
                       </div>
                       <div>
-                          <img src={require('./Images/' + result.number +'/img2.jpg')} className="itemImage" />
+                          <img src={require('../images/' + result.number +'/img2.jpg')} className="itemImage" />
                       </div>
                       <div>
-                          <img src={require('./Images/' + result.number +'/img3.jpg')} className="itemImage" />
+                          <img src={require('../images/' + result.number +'/img3.jpg')} className="itemImage" />
                       </div>
                       <div>
-                          <img src={require('./Images/' + result.number +'/img4.jpg')} className="itemImage" />
+                          <img src={require('../images/' + result.number +'/img4.jpg')} className="itemImage" />
                       </div>
                   </Carousel>
                 </div>

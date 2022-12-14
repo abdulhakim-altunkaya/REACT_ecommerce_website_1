@@ -103,7 +103,7 @@ function LowBasket() {
               <div>
                   <img 
                   onClick={() => navigate(`/items/${JSON.parse(item).number}`)}
-                  src={require('./Images/' + JSON.parse(item).image +'.jpg')} 
+                  src={require('../images/' + JSON.parse(item).image +'.jpg')} 
                   alt={JSON.parse(item).title} 
                   className="cartItemImage"/>
               </div>
@@ -115,7 +115,7 @@ function LowBasket() {
               <span>{JSON.parse(item).unit}</span>
               <span>{JSON.parse(item).unit*JSON.parse(item).price} €</span>
               <div>
-                  <img src={require('./Images/' + "delete3.png")} alt="delete icon button" className="cartDeleteIcon" 
+                  <img src={require("../images/icons/delete.png")} alt="delete icon button" className="cartDeleteIcon" 
                   onClick={() => deleteItem(JSON.parse(item).number)}/>
               </div>
 
