@@ -1,8 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import LowBasketSum from "./LowBasketSum";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import LowBasketForm from './LowBasketForm';
+
 
 
 function LowBasket() {
@@ -36,11 +37,15 @@ function LowBasket() {
   //As there is window.location.reload() line down here, no need to use useEffect up.
   const deleteItem = (id) => {
     localStorage.removeItem(id);
-    window.location.reload();
+    navigate("/cart");
   } 
 
-  const sendOrder = () => {
-    console.log("order is sent");
+  const printOrder = () => {
+    let printContents = document.getElementById('orderSuccessfulArea').innerHTML;
+    let originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents; 
   }
 
   //DISPLAYING MESSAGE AFTER ORDER IS SUBMITTED. Uuid data is coming from LowBasketForm by using function technique
@@ -48,7 +53,7 @@ function LowBasket() {
   const handleOrderStatus = (uuid, basketSum, fullName, orderMoment, address, phone) => {
     let item = {
       itemDetails: (
-        <div className='orderSuccessfulArea'>
+        <div className='orderSuccessfulArea' id='orderSuccessfulArea'>
           <img src={require('../images/icons/greentick.png')} 
             alt="Green Tick Icon" className='orderSuccessfulAreaImg' />
           <div className='orderSuccessfulAreaDetails'>
@@ -70,7 +75,7 @@ function LowBasket() {
             <span>Telephone: {phone}</span>
             <span>Address: {address}</span>
           </div>
-
+          <p><button onClick={printOrder}> <i>print</i></button></p>
           
         </div>
       )
