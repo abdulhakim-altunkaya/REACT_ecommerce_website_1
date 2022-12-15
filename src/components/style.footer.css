@@ -1,8 +1,0 @@
-/* @src/components/style.footer.css */
-
-.mainFooter {
-    display: flex;
-    flex-direction: column;
-    background-color: #242329;
-    color: #fcfcfc;
-}
