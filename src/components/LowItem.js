@@ -3,11 +3,13 @@ import { useParams } from 'react-router-dom';
 import { a } from "./a";
 import { useState } from 'react';
 import Modal from "./Modal";
+import { useNavigate } from 'react-router-dom';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 function LowItem() {
+  const navigate = useNavigate();
   let {itemId} = useParams();
   let itemNumber = Number(itemId)
   let [inputValue, setInputValue] = useState(1);
@@ -36,10 +38,10 @@ function LowItem() {
       setTimeout(() => {
         setButtonText("Į krepšelį");
       }, 3000);
-      window.location.reload(true);
+      navigate(`/items/${result.number}`)
     }
-
   }
+  
 
 
 
