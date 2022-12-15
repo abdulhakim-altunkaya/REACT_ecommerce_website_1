@@ -32,7 +32,6 @@ function LowItem() {
       }
       let jsonNewItem = JSON.stringify(newItem);
       localStorage.setItem(result.number, jsonNewItem);
-      window.location.reload();
       setButtonText("Added \u2714");
       setTimeout(() => {
         setButtonText("Į krepšelį");
