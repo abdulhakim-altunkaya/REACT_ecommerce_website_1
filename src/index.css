@@ -489,9 +489,11 @@ background-color: #c67605;
   border-radius: 4px;
   width: 40%;
   height: 5vh;
+  
 }
 .footerButton:hover {
   font-weight: bolder;
+  cursor: pointer;
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 .footerIcons {
@@ -502,4 +504,81 @@ background-color: #c67605;
   border:#c85000 1px solid;
   width: 45%;
   margin: auto;
+}
+.webmasterDiv {
+  cursor: pointer;
+}
+
+
+/*CONTACT FORM AREA*/
+.contactFormDiv {
+  width: 50%;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+}
+.contactFormDiv h1 {
+  text-align: center;
+}
+.formContact {
+  display: flex;
+  flex-direction: column;
+}
+.formContact > input {
+  margin-top: 5px;
+  min-height: 30px;
+}
+.formContact > input {
+  margin-top: 5px;
+  min-height: 30px;
+}
+.formContact > input[type=text] {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+.formContact textArea {
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.formContact input:focus {
+  background: lightgreen;
+}
+.formContact input:required:focus:invalid {
+  background: lightpink;
+}
+.formContact textarea:required:focus:invalid {
+  background: lightpink;
+}
+
+
+/* CSS */
+.button-87 {
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.button-87:active {
+  transform: scale(0.95);
 }

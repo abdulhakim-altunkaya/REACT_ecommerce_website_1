@@ -1,7 +1,10 @@
 import React from 'react'
-import UpperbarTop1 from './UpperbarTop1'
+import UpperbarTop1 from './UpperbarTop1';
+import {useNavigate} from 'react-router-dom';
 
 function Footer() {
+  const navigate = useNavigate();
+  
   return (
     <div className="mainFooter">
         <div className="footerUp">
@@ -17,13 +20,15 @@ function Footer() {
               <img className='footerIcons' src={require('../images/icons/instagram.png')}  alt="instagram icon" />
             </div>
             <div className='footerUpDiv2'>
-              <button className='footerButton'>palikite pranešimą</button> <br /><br />
+              <button className='footerButton' onClick={() => navigate("/contact") }>palikite pranešimą</button> <br /><br />
               <span>didžiuojamės iš Kauno (Kaunas/Lithuania)</span>
               
             </div>
         </div>
         <div className="footerBottom">
-          <p>Website Systems: <strong>Tomato E-Commerce</strong></p> 
+          <p> 
+            <span className='webmasterDiv'> Website Systems: <strong>Tomato E-Commerce</strong></span>
+          </p> 
         </div>
     </div>
   )

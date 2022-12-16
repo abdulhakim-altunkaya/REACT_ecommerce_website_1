@@ -1,0 +1,40 @@
+/*CONTACT FORM AREA*/
+.contactFormDiv {
+    width: 50%;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+.contactFormDiv h1 {
+    text-align: center;
+}
+.formContact {
+    display: flex;
+    flex-direction: column;
+}
+.formContact > input {
+    margin-top: 5px;
+    min-height: 30px;
+}
+.formContact > input {
+    margin-top: 5px;
+    min-height: 30px;
+}
+.formContact > input[type=text] {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+.formContact textArea {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.formContact input:focus {
+    background: lightgreen;
+}
+.formContact input:required:focus:invalid {
+    background: lightpink;
+}
+.formContact textarea:required:focus:invalid {
+    background: lightpink;
+}
