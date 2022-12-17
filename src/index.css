@@ -550,6 +550,16 @@ background-color: #c67605;
 .formContact textarea:required:focus:invalid {
   background: lightpink;
 }
+.formContact > input::-webkit-outer-spin-button,
+.formContact > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.formContact > input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 /* CSS */

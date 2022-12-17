@@ -45,7 +45,7 @@ function LowInfo() {
         //add form validation tools to check email, name surname, textarea,  and phone numbers
         //DONE -- Create a footer component
         //Detail footer component and connect them to relavant parts
-        //Contact form should have a separate area in Firebase
+        //DONE -- Contact form should have a separate area in Firebase
         //Also add comment section
         }
 

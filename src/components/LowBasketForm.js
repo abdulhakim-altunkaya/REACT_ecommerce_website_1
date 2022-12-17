@@ -24,7 +24,7 @@ function LowBasketForm({handleOrderStatus}) {
   }, [basketArray]);
   useEffect(() => {
     setBasketSum(total);
-  }, [basketArray]);
+  }, [total]);
 
 
 
