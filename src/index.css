@@ -512,6 +512,9 @@ background-color: #c67605;
 .carouselChildDivs img{
   border-radius: 6px;
 }
+.carouselChildDivs {
+  cursor: pointer;
+}
 .webmasterDiv {
   cursor: pointer;
 }
