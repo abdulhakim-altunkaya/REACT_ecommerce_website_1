@@ -8,10 +8,12 @@ function LowKupri() {
     <div className='generalContainer'>
       {a.map((item, index) => (
         <div key={index} className="imageContainer" >
-          <img
-            src={require('../images/' + item.image +'.jpg')}
-            alt={item.title}
-          />
+          <div className='realImgContainer'>
+            <img
+              src={require('../images/' + item.image +'.jpg')}
+              alt={item.title}
+            />
+          </div>
           <div className='detailContainer'>
             <div className='detailTitle'>
               <span>{item.title}</span>

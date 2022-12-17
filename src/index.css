@@ -140,7 +140,6 @@ scrollbar-width: none; */ /* Firefox *//*
   flex-direction: column;
   border: 1px solid lightgray;
   border-radius: 2px;
-  width: 15vw;
   min-width: 15vw;
   max-width: 15vw;
   height: 42vh;
@@ -148,11 +147,18 @@ scrollbar-width: none; */ /* Firefox *//*
   margin-right: 30px;
   margin-top: 20px;
 }
-.imageContainer img {
-  width: 90%;
-  height: 80%;
+.realImgContainer {
   border-radius: 4px;
+  min-height: 73%;
+  max-height: 73%;
   align-self: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.realImgContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .detailContainer {
   height: 20%;
