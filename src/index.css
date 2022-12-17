@@ -505,9 +505,12 @@ background-color: #c67605;
   cursor: pointer;
 }
 .mainCarouselDiv {
-  border:#c85000 1px solid;
   width: 45%;
   margin: auto;
+  margin-top: 20px;
+}
+.carouselChildDivs img{
+  border-radius: 6px;
 }
 .webmasterDiv {
   cursor: pointer;
