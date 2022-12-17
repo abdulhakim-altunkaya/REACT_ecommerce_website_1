@@ -10,7 +10,7 @@ function LowPini() {
     <div className='generalContainer'>
       {pinigines.map((item, index) => (
         <div key={index} className="imageContainer">
-          <div className='realImgContainer'>
+          <div className='realImgContainer' onClick={() => navigate(`/items/pinigines/${item.number}`)}>
             <img src={require(`../images/pinigines/${item.number}/${item.datanumber}A.jpg`)} alt={item.title} />
           </div>
           <div className='detailContainer'>

@@ -154,6 +154,7 @@ scrollbar-width: none; */ /* Firefox *//*
   align-self: center;
   overflow-y: hidden;
   overflow-x: hidden;
+  cursor: pointer;
 }
 .realImgContainer img{
   width: 100%;

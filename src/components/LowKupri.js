@@ -10,7 +10,7 @@ function LowKupri() {
     <div className='generalContainer'>
       {kuprines.map((item, index) => (
         <div key={index} className="imageContainer">
-          <div className='realImgContainer'>
+          <div className='realImgContainer' onClick={() => navigate(`/items/kuprines/${item.number}`)}>
             <img src={require(`../images/kuprines/${item.number}/${item.datanumber}A.jpg`)} alt={item.title} />
           </div>
           <div className='detailContainer'>

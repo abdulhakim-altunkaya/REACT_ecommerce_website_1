@@ -10,7 +10,7 @@ function LowRanki() {
     <div className='generalContainer'>
       {rankines.map((item, index) => (
         <div key={index} className="imageContainer">
-          <div className='realImgContainer'>
+          <div className='realImgContainer' onClick={() => navigate(`/items/rankines/${item.number}`)}>
             <img src={require(`../images/rankines/${item.number}/${item.datanumber}A.jpg`)} alt={item.title} />
           </div>
           <div className='detailContainer'>
