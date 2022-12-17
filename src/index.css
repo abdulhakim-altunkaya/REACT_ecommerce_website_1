@@ -55,7 +55,7 @@ body {
   font-family: 'Heebo', sans-serif;
   letter-spacing: 4px;
 }
-.heading:hover {
+.childHeading:hover {
   cursor: pointer;
 }
 
@@ -471,7 +471,6 @@ background-color: #c67605;
   font-family: 'Kaushan Script', cursive;
 }
 .footerUpDiv1{
-  
   flex-grow: 2;
 }
 .footerUpDiv2 {

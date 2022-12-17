@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom';
 
 function Footer() {
   const navigate = useNavigate();
-  
+   
   return (
     <div className="mainFooter">
         <div className="footerUp">
@@ -15,9 +15,15 @@ function Footer() {
             </div>
             <div className='footerUpDiv2'>
               <span>&nbsp;&nbsp; Sekite mus</span> <br /> <br />
-              <img className='footerIcons' src={require('../images/icons/facebook.png')}  alt="facebook icon" />
+              <a href="https://www.facebook.com/spalvotakuprine/">
+                <img className='footerIcons' src={require('../images/icons/facebook.png')} alt="facebook icon" />
+              </a>
+              
               &nbsp;&nbsp;
-              <img className='footerIcons' src={require('../images/icons/instagram.png')}  alt="instagram icon" />
+              <a href="https://www.instagram.com/spalvota.kuprine/">
+                <img className='footerIcons' src={require('../images/icons/instagram.png')}  alt="instagram icon" />
+              </a>
+              
             </div>
             <div className='footerUpDiv2'>
               <button className='footerButton' onClick={() => navigate("/contact") }>palikite pranešimą</button> <br /><br />
