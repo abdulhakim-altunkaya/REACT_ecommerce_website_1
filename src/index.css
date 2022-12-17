@@ -243,11 +243,9 @@ scrollbar-width: none; */ /* Firefox *//*
 .itemArea2 {
   padding-top: 20px;
   min-height: 15vh;
+  padding-bottom: 50px;
 }
-.itemArea3 {
-  padding-top: 20px;
-  min-height: 15vh;
-}
+
 
 .cartArea {
   font-family: 'Quicksand', sans-serif;
@@ -457,7 +455,7 @@ background-color: #c67605;
   flex-direction: column;
   background-color: #242329;
   color: #fcfcfc;
-  margin-top: 10px;
+  margin-top: 65px;
   min-height: 29vh;
   max-height: 29vh;
 }

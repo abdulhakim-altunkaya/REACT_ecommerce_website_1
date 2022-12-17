@@ -102,20 +102,21 @@ function LowBasket() {
    
       <div>
         {basketArray.map((item, index) => (
+        
           <div key={index}>
             <div className='cartList'>
 
               <div>
                   <img 
-                  onClick={() => navigate(`/items/${JSON.parse(item).number}`)}
-                  src={require('../images/' + JSON.parse(item).image +'.jpg')} 
+                  onClick={() => navigate(`/items/${JSON.parse(item).category}/${JSON.parse(item).number}`)}
+                  src={require(`../images/${JSON.parse(item).category}/${JSON.parse(item).number}/${JSON.parse(item).number}.jpg`)}
                   alt={JSON.parse(item).title} 
                   className="cartItemImage"/>
               </div>
               <span>{JSON.parse(item).number}</span>
               <span 
               style={{cursor: "pointer"}}
-              onClick={() => navigate(`/items/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
+              onClick={() => navigate(`/items/${JSON.parse(item).category}/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
               <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} €</span>
               <span>{JSON.parse(item).unit}</span>
               <span>{JSON.parse(item).unit*JSON.parse(item).price} €</span>

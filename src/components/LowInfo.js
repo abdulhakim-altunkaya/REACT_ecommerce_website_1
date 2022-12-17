@@ -46,6 +46,8 @@ function LowInfo() {
         //DONE -- Create a footer component
         //Detail footer component and connect them to relavant parts
         //DONE -- Contact form should have a separate area in Firebase
+        //Update payment data, add 3 euros to the final price
+        //Also for international customers, 
         //Also add comment section
         }
 

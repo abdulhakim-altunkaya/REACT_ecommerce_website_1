@@ -1,62 +1,29 @@
 import React from 'react';
-import {useState} from 'react';
-
-import {db} from "../firebase";
-import { uid } from 'uid';
-import { set, ref } from 'firebase/database';
+import {pinigines} from "../images/pinigines/pinigines.js";
+import { useNavigate } from 'react-router-dom';
 
 function LowPini() {
 
-  const [todo , setTodo] = useState("");
-  const [formInput, setFormInput] = useState("");
-  const [formAddress, setFormAddress] = useState("");
-
-  console.log(process.env.REACT_APP_MEASUREMENT_ID);
-  
-  const addDocument = (e) => {
-    e.preventDefault();
-    const uuid = uid();
-    set(ref(db, `/${uuid}`), {
-      todo: todo,
-      uuid: uuid
-    });
-    setTodo("");
-  }
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const uuid = uid();
-    set(ref(db, `/${uuid}`), {
-      name: formInput,
-      address: formAddress,
-      uuid: uuid
-    });
-    setTodo("");
-  }
+  const navigate = useNavigate();
 
   return (
-    <>
-      <div>LowPini
-        Todo: <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)}/> <br />
-         <button onClick={addDocument}>Add</button>  
-      </div>
+    <div className='generalContainer'>
+      {pinigines.map((item, index) => (
+        <div key={index} className="imageContainer">
+          <div className='realImgContainer'>
+            <img src={require(`../images/pinigines/${item.number}/${item.datanumber}A.jpg`)} alt={item.title} />
+          </div>
+          <div className='detailContainer'>
+            <div className='detailTitle'><span>{item.title}</span></div>
+            <div className='detailChild'>
+              <span className='detailPrice'>{item.price} €</span>
+              <button className="detailButton listButton" onClick={() => navigate(`/items/pinigines/${item.number}`)}>Į krepšelį</button>
+            </div>
+          </div>
 
-      <div> 
-        <h1>FORM</h1>
-        <form onSubmit={handleSubmit}>
-          <label> Name: <input type="text" name="name" value={formInput} onChange={(e) => setFormInput(e.target.value)}/> </label>
-          <label> Address: <input type="text" name="address" value={formAddress} onChange={(e) => setFormAddress(e.target.value)}/> </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-
-
-
-
-
-
-
-    </>
-
+        </div>
+      ))}
+    </div>
   )
 }
 

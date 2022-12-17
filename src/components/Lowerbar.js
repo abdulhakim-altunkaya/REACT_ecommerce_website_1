@@ -5,9 +5,11 @@ import LowRanki from "./LowRanki";
 import LowKupri from "./LowKupri";
 import LowPini from "./LowPini";
 import LowInfo from "./LowInfo";
-import LowItem from "./LowItem";
+import LowItemKupri from "./LowItemKupri";
 import LowBasket from "./LowBasket";
 import LowContact from "./LowContact";
+import LowItemRanki from "./LowItemRanki";
+import LowItemPini from './LowItemPini';
 
 function Lowerbar() {
   
@@ -20,7 +22,9 @@ function Lowerbar() {
           <Route path="/rankines" element={ <LowRanki /> } />
           <Route path="/information" element={ <LowInfo /> } />
           <Route path="/pinigines" element={ <LowPini /> } />
-          <Route path="/items/:itemId" element={ <LowItem /> } />
+          <Route path="/items/kuprines/:itemId" element={ <LowItemKupri /> } />
+          <Route path="/items/rankines/:itemId" element={ <LowItemRanki /> } />
+          <Route path="/items/pinigines/:itemId" element={ <LowItemPini /> } />
           <Route path="/cart" element={ <LowBasket /> } />
           <Route path="/contact" element={ <LowContact /> } />
         </Routes>
