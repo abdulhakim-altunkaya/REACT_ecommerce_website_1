@@ -9,25 +9,23 @@ function Footer() {
     <div className="mainFooter">
         <div className="footerUp">
             <div className='footerUpDiv1'>
-              <UpperbarTop1 /> <br />
-              <span className='footerSlogan'>traukiantis akį, nepaprastas ir unikalus</span><br /><br />
-              
+              <UpperbarTop1 /> <br />              
             </div>
-            <div className='footerUpDiv2'>
-              <span>&nbsp;&nbsp; Sekite mus</span> <br /> <br />
-              <a href="https://www.facebook.com/spalvotakuprine/">
-                <img className='footerIcons' src={require('../images/icons/facebook.png')} alt="facebook icon" />
-              </a>
-              
-              &nbsp;&nbsp;
-              <a href="https://www.instagram.com/spalvota.kuprine/">
-                <img className='footerIcons' src={require('../images/icons/instagram.png')}  alt="instagram icon" />
-              </a>
-              
+            <div className='footerUpDiv2' id='footerIconDiv'>
+              <span id='footerIconText'>&nbsp;&nbsp; Sekite mus</span>
+              <span>
+                <a href="https://www.facebook.com/spalvotakuprine/">
+                  <img className='footerIcons' src={require('../images/icons/facebook.png')} alt="facebook icon" />
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://www.instagram.com/spalvota.kuprine/">
+                  <img className='footerIcons' src={require('../images/icons/instagram.png')}  alt="instagram icon" />
+                </a>
+              </span>
             </div>
             <div className='footerUpDiv2'>
               <button className='footerButton' onClick={() => navigate("/contact") }>palikite pranešimą</button> <br /><br />
-              <span>didžiuojamės iš Kauno (Kaunas/Lithuania)</span>
+              <span id='footerTextSmall'>didžiuojamės iš Kauno (Kaunas/Lithuania)</span>
               
             </div>
         </div>

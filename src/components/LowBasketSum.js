@@ -33,14 +33,18 @@ function LowBasketSum() {
 
 
   return (
-    <div className='cartListHeader'>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>Užsakymo suma</span>
-        <span>{basketSum} Euros</span>
-        <span></span>
+    <div >
+      <div id='cartListSumBig'>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>Užsakymo suma: &nbsp; {basketSum} Euros</span>
+          <span>&nbsp;</span>
+      </div>
+      <div id='cartListSumSmall'>
+          <span>&nbsp;</span>
+          <span>Užsakymo suma: &nbsp;</span>
+          <span>{basketSum} Euros</span>
+      </div>
     </div>
   )
 }

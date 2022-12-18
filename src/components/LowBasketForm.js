@@ -62,8 +62,8 @@ function LowBasketForm({handleOrderStatus}) {
   }
 
   return (
-    <div className="container">
-        <h1 className="textEffect1"> Užsakymo Pateikimas </h1>
+    <div className="container" id='lowBasketInfoContainer'>
+        <h1 className="textEffect1"> Užsakymo Pateikimas </h1> <br />
         1) Užpildykite žemiau esančią formą <br />
         2) Spustelėkite mygtuką pateikti <br />
         3) Perveskite suma į šią banko sąskaitą per 3 dienas. <br />

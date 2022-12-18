@@ -6,7 +6,7 @@ import LowBasketForm from './LowBasketForm';
 
 
 
-function LowBasket() {
+function LowBasketSmall() {
   const navigate = useNavigate();
 
   {/* double filtering to prevent possible errors if local storage is littered
@@ -93,7 +93,7 @@ function LowBasket() {
       <div className='cartListHeader'>
         <span>&nbsp;</span>
         <span>Item Id</span>
-        <span id='cartToggleTitle1'>Prekė</span>
+        <span>Prekė</span>
         <span style={{paddingLeft: "6px"}}>Vieneto kaina</span>
         <span>Kiekis</span>
         <span>Iš viso</span>
@@ -113,9 +113,9 @@ function LowBasket() {
                   alt={JSON.parse(item).title} 
                   className="cartItemImage"/>
               </div>
-              <span id='cartItemId'>{JSON.parse(item).number}</span>
+              <span>{JSON.parse(item).number}</span>
               <span 
-              style={{cursor: "pointer"}} id='cartToggleTitle2A'
+              style={{cursor: "pointer"}}
               onClick={() => navigate(`/items/${JSON.parse(item).category}/${JSON.parse(item).number}`)}>{JSON.parse(item).title}</span>
               <span style={{paddingLeft: "10px"}}>{JSON.parse(item).price} €</span>
               <span>{JSON.parse(item).unit}</span>
@@ -126,9 +126,6 @@ function LowBasket() {
               </div>
 
             </div>
-            <span id='cartToggleTitle2B'
-            onClick={() => navigate(`/items/${JSON.parse(item).category}/${JSON.parse(item).number}`)}>
-             <strong>Prekė: </strong> {JSON.parse(item).title}</span>
           </div>
         ))}
       </div>
@@ -146,4 +143,4 @@ function LowBasket() {
   )
 }
 
-export default LowBasket;
+export default LowBasketSmall;

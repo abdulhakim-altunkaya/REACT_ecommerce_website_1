@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+@media (min-width: 901px) {
+
 body {
   margin: 0;
   
@@ -259,6 +261,18 @@ scrollbar-width: none; */ /* Firefox *//*
   padding-top: 15px;
   padding-bottom: 15px;
 }
+#cartListSumBig {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#cartListSumSmall {
+  display: none;
+}
 .cartList {
   margin-top: 20px;
   display: flex;
@@ -288,6 +302,9 @@ scrollbar-width: none; */ /* Firefox *//*
   max-height: 20%;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+#cartToggleTitle2B {
+  display: none;
 }
 input:required:focus:invalid {
   background: lightpink;
@@ -443,10 +460,15 @@ background-color: #c67605;
 
 /*H1 STYLE BASKET AREA*/
 .textEffect1, .cartArea h1 {
-  text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 3px;
-  color: lightcoral;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  background: orange;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 /*FOOTER AREA*/
@@ -456,7 +478,7 @@ background-color: #c67605;
   flex-direction: column;
   background-color: #242329;
   color: #fcfcfc;
-  margin-top: 65px;
+  margin-top: 100px;
   min-height: 29vh;
   max-height: 29vh;
 }
@@ -471,12 +493,16 @@ background-color: #c67605;
 .footerSlogan {
   font-family: 'Kaushan Script', cursive;
 }
-.footerUpDiv1{
+.footerUpDiv1{ 
   flex-grow: 2;
 }
 .footerUpDiv2 {
   padding-top: 10px;
   flex-grow: 1;
+}
+#footerIconDiv {
+  display: flex;
+  flex-direction: column;
 }
 .footerBottom{
   min-height: 5vh;
@@ -601,4 +627,7 @@ background-color: #c67605;
 }
 .button-87:active {
   transform: scale(0.95);
+}
+
+
 }

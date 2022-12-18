@@ -11,7 +11,7 @@ function UpperbarBottom() {
         <span onClick={ () => navigate("/rankines") } >RANKINĖS</span>
         <span onClick={ () => navigate("/kuprines") }>KUPRINĖS</span>
         <span onClick={ () => navigate("/pinigines") }>PINIGINĖS</span>
-        <span onClick={ () => navigate("/information") }>NAUDINGA INFORMACIJA</span>
+        <span onClick={ () => navigate("/information") }>INFORMACIJA</span>
 
     </div>
   )
