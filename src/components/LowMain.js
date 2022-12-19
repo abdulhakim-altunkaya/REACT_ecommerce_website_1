@@ -7,7 +7,7 @@ function LowMain() {
       <div style={{alignContent: "center", alignItems: "center"}}>
           <LowCarousel />
       </div>
-      <p>some text here</p>
+      <p></p>
     </div>
   )
 }

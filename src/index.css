@@ -230,6 +230,9 @@ scrollbar-width: none; */ /* Firefox *//*
   max-width: 80%;
   min-width: 80%;
 }
+#carouselDiv {
+  width: 30vw;
+}
 
 .itemInput {
   width: 70px;
@@ -366,6 +369,7 @@ textarea:required:focus:invalid {
 .orderSuccessfulAreaParentDiv{
   font-size: 26px;
   padding-top: 20px;
+  padding-left: 20px;
   font-family: 'Trebuchet MS', sans-serif;
 }
 .orderSuccessfulArea {
@@ -382,6 +386,17 @@ textarea:required:focus:invalid {
   flex-direction: column;
 }
 
+#printBtn {
+  width: 20vw !important;
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 8px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+#printBtn:hover {
+  background-color: #f09819;
+}
 
 /*CART ICON*/
 #lblCartCount {

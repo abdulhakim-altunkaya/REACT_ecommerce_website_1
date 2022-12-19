@@ -75,7 +75,8 @@ function LowBasket() {
             <span>Telephone: {phone}</span>
             <span>Address: {address}</span>
           </div>
-          <p><button onClick={printOrder}> <i>print</i></button></p>
+          <br />
+          <button id='printBtn' onClick={printOrder}> <i>print</i></button>
           
         </div>
       )

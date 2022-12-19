@@ -53,7 +53,7 @@ function LowItemKupri() {
           <div className='itemArea1'>
 
               <div className='itemImageDiv'>
-                <div className="carousel-wrapper" style={{width: "30vw"}}>
+                <div className="carousel-wrapper" id='carouselDiv'>
                   <Carousel infiniteLoop useKeyboardArrows>
                       <div>
                           <img src={require('../images/kuprines/' + result.number + `/${result.datanumber}A.jpg` )} className="itemImage" alt='item to purchase'/>
@@ -85,13 +85,15 @@ function LowItemKupri() {
                   
                 </div>
                 <div>
-                  <button className='detailButton itemButton' onClick={saveChart}> {buttonText} </button>
+                  <button id='itemDetailBtn' className='detailButton itemButton' onClick={saveChart}> {buttonText} </button>
                 </div>
               </div>
           </div>
 
           <div className='itemArea2'>
-            <main>PRODUCT INFORMATION: {result.description}</main>
+            <main>
+              <h3>PRODUCT INFORMATION</h3> 
+              {result.description}</main>
           </div>
 
 

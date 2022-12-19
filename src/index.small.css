@@ -109,12 +109,12 @@
         flex-direction: column;
         border: 1px solid lightgray;
         border-radius: 2px;
-        min-width: 40vw;
-        max-width: 40vw;
+        min-width: 80%;
         height: 42vh;
         padding: 5px;
-        margin-right: 3px;
+        margin: auto;
         margin-top: 3px;
+        margin-bottom: 10px;
     }
     .realImgContainer {
         border-radius: 4px;
@@ -144,7 +144,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 13ch;
+        max-width: 46ch;
         height: 30%;
     }
     .detailChild {
@@ -156,8 +156,7 @@
         height: 48%;
     }
     .detailPrice {
-        align-self:flex-end;
-        font-size: 15px;
+        font-size: 25px;
     }
     .itemContainer {
         font-family: 'Inter', sans-serif;
@@ -175,6 +174,10 @@
     .itemImageDiv{
         min-width: 90%;
     }
+    #carouselDiv {
+      min-width:100%;
+      max-width: 100%;
+    }
     .itemDetailDiv {
         min-width: 90%;
         display: flex;
@@ -183,24 +186,35 @@
     .itemDetailDiv div{
         height: 50%;
     }
+
     .priceTag {
         color: #fa6400;
-        font-size: 20px;
+        font-size: 25px;
     }
     .itemImage {
-        max-width: 80%;
-        min-width: 80%;
+        max-width: 70%;
     }
+    ul.thumbs {
+      display: flex !important;
+      width: 100% !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+    }
+    ul.thumbs li {
+      width: 21% !important;
+      text-align: center !important;
+    }
+
     .itemInput {
         width: 70px;
-        height: 22px;
+        height: 33px;
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
         border:1px solid #ddd;
         border-radius:4px;
-        vertical-align: top;
+        vertical-align: middle;
         margin-top: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
     }
     
     .itemArea2 {
@@ -284,6 +298,11 @@
         width: 40%;
         height: 20%;
       }
+      #itemDetailBtn {
+        margin-top: 15px !important;
+        height: 45px !important;
+        font-size: 23px !important;
+      }
       .listButton{
         width: 60%;
       }
@@ -327,20 +346,27 @@
         box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
         transform: translateY(0);
       }
-      
+      #printBtn {
+        min-width: 50px !important;
+        font-size: 20px;
+        border: 2px solid lightgrey;
+        border-radius: 5px;
+      }
+
       /*ORDER SUCCESSFUL AREA*/
       .orderSuccessfulAreaParentDiv{
-        font-size: 26px;
+        font-size: 22px;
         padding-top: 20px;
+        padding-left: 25px;
         font-family: 'Trebuchet MS', sans-serif;
       }
       .orderSuccessfulArea {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 90%;
       }
       .orderSuccessfulAreaImg {
-        max-width:20%;
+        max-width:30%;
       }
       .orderSuccessfulAreaDetails {
         margin-top: 20px;
@@ -450,12 +476,13 @@
         background-color: #242329;
         color: #fcfcfc;
         margin-top: 30px;
-        min-height: 25vh;
-        max-height: 25vh;
+        min-height: 22vh;
+        max-height: 22vh;
+        padding-top: 15px;
       }
       .footerUp {
-        min-height: 21vh;
-        max-height: 21vh;
+        min-height: 18vh;
+        max-height: 18vh;
         width: 90%;
         margin: auto;
         display: flex;
@@ -464,12 +491,7 @@
       .footerSlogan {
         font-family: 'Kaushan Script', cursive;
       }
-      .footerUpDiv1{
 
-      }
-      .footerUpDiv2 {
-
-      }
       .footerBottom{
         min-height: 4vh;
         max-height: 4vh;
