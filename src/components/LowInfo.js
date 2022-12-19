@@ -22,7 +22,7 @@ function LowInfo() {
         //DONE -- display basket area with map
         //DONE -- image*id*title * price * amount/updatable amount * delete button
         //add image alt information
-        //add address information, name and surname, and payment instructions to the basket component
+        //DONE -- add address information, name and surname, and payment instructions to the basket component
         //add shipment price info or directly add shipment to the basket area
         //DONE -- Make sure people with empty basket cannot order anything.
         //DONE -- Replace alert box with modal box

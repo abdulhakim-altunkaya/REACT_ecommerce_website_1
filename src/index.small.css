@@ -191,8 +191,10 @@
         color: #fa6400;
         font-size: 25px;
     }
-    .itemImage {
-        max-width: 70%;
+    .itemImage { 
+        max-width: 90%;
+        min-height: 90% !important;
+        max-height: 90% !important;
     }
     ul.thumbs {
       display: flex !important;
@@ -202,8 +204,23 @@
     }
     ul.thumbs li {
       width: 21% !important;
-      text-align: center !important;
     }
+/*
+    .mainCarouselDiv {
+      min-width: 90vw !important;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .mainCarouselDiv > li.slide.selected {
+      min-width: 90vw !important;
+    }
+    .carouselChildDivs img{
+      border-radius: 6px;
+    }
+
+    .mainCarouselDiv ul.thumbs li {
+      display: none !important;
+    }*/
 
     .itemInput {
         width: 70px;
@@ -520,14 +537,31 @@
         display: none;
       }
       .mainCarouselDiv {
-        width: 45%;
+        min-width: 90vw !important;
         margin: auto;
         margin-top: 20px;
+      }
+      .mainCarouselDiv > li.slide.selected {
+        min-width: 90vw !important;
       }
       .carouselChildDivs img{
         border-radius: 6px;
       }
-      
+
+      .mainCarouselDiv ul.thumbs li {
+        display: none !important;
+      }
+      /*
+      ul.thumbs {
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+      }
+      ul.thumbs li {
+        width: 21% !important;
+        text-align: center !important;
+      }*/
       
       /*CONTACT FORM AREA*/
       .contactFormDiv {
