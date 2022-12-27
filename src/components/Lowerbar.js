@@ -10,6 +10,7 @@ import LowBasket from "./LowBasket";
 import LowContact from "./LowContact";
 import LowItemRanki from "./LowItemRanki";
 import LowItemPini from './LowItemPini';
+import LowTest from './LowTest';
 
 function Lowerbar() {
   
@@ -27,6 +28,7 @@ function Lowerbar() {
           <Route path="/items/pinigines/:itemId" element={ <LowItemPini /> } />
           <Route path="/cart" element={ <LowBasket /> } />
           <Route path="/contact" element={ <LowContact /> } />
+          <Route path="/test" element={ <LowTest /> } />
         </Routes>
 
 

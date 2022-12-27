@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import "./index.small.css";
+import "./index.slide.css";
+
 import App from './App';
 
 

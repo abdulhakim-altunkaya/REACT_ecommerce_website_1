@@ -4,10 +4,8 @@ import {db} from "../firebase";
 import { set, ref } from 'firebase/database';
 import { uid } from 'uid';
 import { useNavigate } from 'react-router-dom';
-import {useForm} from "react-hook-form";
 
 function LowContact() {
-  const {reset} = useForm();
   let [contactFullName, setContactFullName] = useState("");
   let [contactPhone, setContactPhone] = useState();
   let [contactEmail, setContactEmail] = useState("");
@@ -50,7 +48,7 @@ function LowContact() {
       { displayReceived === false ?
           <>
             <h1>CONTACT FORM</h1>
-            <p>we will be happy to hear your thoughts, suggestions, questions, complaints, requests</p>
+            <p id='contactSmallCssP'>We will be happy to hear your thoughts, suggestions, questions, complaints.</p>
             <form className='formContact' onSubmit={handleSubmitContact} id="contactForm">
               <input type="text" value={contactFullName} className="inputContact"
                 onChange={e => setContactFullName(e.target.value)} placeholder="Your full name" required/>

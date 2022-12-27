@@ -7,9 +7,8 @@ function LowInfo() {
 
         {
           /*
-          <a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
-        </a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-          */
+          
+          
 
         //DONE -- Add amount to item display and/OR basket area
         //DONE -- add delete button to basket area
@@ -49,27 +48,38 @@ function LowInfo() {
         //Update payment data, add 3 euros to the final price
         //Also for international customers, 
         //Also add comment section
-        }
+        //You can add one more carousel for small screens
+        */}
 
 
 
-      <div className="numberInput">
-        <h1>test test test</h1>
+      <div className="aboutDiv">
+        <h2>Grąžinimo tvarka</h2>
+        <p>
+          <li>1. Prekė turi būti nepraradusi prekinės išvaizdos (nepažeistos etiketės, nenuplėštos apsauginės plėvelės ir kt.</li>
+          <li>2. Grąžinama prekė turi būti originalioje tvarkingoje pakuotėje</li>
+        </p>
         a lot of information:
         shipment
         items here are personal belongings, this is not a store. for this reason, there will be no facturas. 
         return policy: contact the seller
         <p>
-        Credit for Modal Page: <strong>Francisco Mendes </strong>  
-        (<a href="https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc">https://dev.to</a>)
+
         </p>
         <p>
-          Credit for Green Tick and Instagram Icon: 
+          <h4>Credits:</h4>
+          Green Tick and Instagram icon: &nbsp;
           <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Aldo Cervantes - Flaticon</a>
-          <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+          &nbsp; &nbsp; <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
           <br />
-          button styles: <a href="https://getcssscan.com/css-buttons-examples">getcssscan</a>
-
+          Modal Page: Francisco Mendes, 
+            (<a href="https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc">https://dev.to</a>)
+          <br />
+          Button styles: <a href="https://getcssscan.com/css-buttons-examples">getcssscan</a>
+          <br />
+          Basket icon:
+          <a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
+          </a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </p>
         
 
