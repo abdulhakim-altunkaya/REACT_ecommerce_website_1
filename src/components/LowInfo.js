@@ -80,6 +80,8 @@ function LowInfo() {
           Basket icon:
           <a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
           </a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <br />
+          <a target="_blank" href="https://icons8.com/icon/LpsZKcJoQ4W3/arrow-left">Arrow Left</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </p>
         
 
