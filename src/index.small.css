@@ -19,7 +19,7 @@
     }
 
     .Upperbar {
-        min-height: 10vh;
+        min-height: 13vh;
         border-bottom: solid 2px lightgrey;
         display: flex;
         flex-direction: column;
@@ -65,7 +65,7 @@
         width: 98%;
         min-height: 40%;
         font-family: 'Inter', sans-serif;
-        font-size: 13px;
+        font-size: 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -84,7 +84,7 @@
         filter: drop-shadow(2px 5px 5px rgba(0,0,0,0.3));
     }*/
     .Lowerbar {
-        min-height: 90vh;
+        min-height: 87vh;
         width: 98%;
         margin: auto;
     }
@@ -482,7 +482,8 @@
         border-radius: 5px;
       }
       #lowBasketInfoContainer {
-
+        padding-left: 10px;
+        padding-right: 10px;
         text-align: justify;
         text-justify: inter-word;
       }
