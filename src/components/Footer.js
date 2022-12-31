@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className="footerBottom">
           <p> 
-            <span className='webmasterDiv'> Website Systems: <strong>Tomato E-Commerce</strong></span>
+            <span className='webmasterDiv' onClick={() => navigate("/website")}> Website Systems: <strong>Tomato E-Commerce</strong></span>
           </p> 
         </div>
     </div>

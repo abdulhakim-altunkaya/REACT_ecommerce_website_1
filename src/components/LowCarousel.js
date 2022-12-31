@@ -8,7 +8,7 @@ function LowCarousel() {
     {/*When you update carousel img, just put images in relevant folder and change two lines below. 
     Make sure, img names are ending with "A" */}
     let listImgTypes = ["kuprines", "pinigines", "pinigines", "kuprines", "kuprines"]
-    let listImages = ["KP001A", "PN007A", "PN012A", "KP004A", "KP014A"]
+    let listImages = ["KP001A", "PN007A", "PN012A", "KP004A", "KP005A"]
     return (
         <div className="mainCarouselDiv">
            <div className="carousel-wrapper">

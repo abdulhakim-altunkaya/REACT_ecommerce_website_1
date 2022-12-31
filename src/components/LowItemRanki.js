@@ -92,7 +92,7 @@ function LowItemRanki() {
 
           <div className='itemArea2'>
             <main>
-              <h3>PRODUCT INFORMATION</h3> 
+              <h3>Specifikacijos - Informacija</h3> 
               {result.description}</main>
           </div>
 
