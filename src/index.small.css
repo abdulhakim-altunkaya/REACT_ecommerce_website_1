@@ -370,6 +370,7 @@
         font-size: 20px;
         border: 2px solid lightgrey;
         border-radius: 5px;
+        cursor: pointer;
       }
 
       /*ORDER SUCCESSFUL AREA*/
@@ -556,6 +557,10 @@
 
       .mainCarouselDiv ul.thumbs li {
         display: none !important;
+      }
+
+      .lowWebsiteArea li, .intShippingArea li {
+        margin-top: 7px;
       }
       /*
       ul.thumbs {

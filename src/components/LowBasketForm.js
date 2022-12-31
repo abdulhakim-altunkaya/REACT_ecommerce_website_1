@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react';
 import {db} from "../firebase";
 import { uid } from 'uid';
 import { set, ref } from 'firebase/database';
+import { useNavigate } from 'react-router-dom';
 
 function LowBasketForm({handleOrderStatus}) {
+  const navigate = useNavigate();
 
   let allLocalStorage = { ...localStorage };
   let localStorageValues = Object.values(allLocalStorage);
@@ -63,20 +65,23 @@ function LowBasketForm({handleOrderStatus}) {
 
   return (
     <div className="container" id='lowBasketInfoContainer'>
-        <h1 className="textEffect1"> Užsakymo Pateikimas </h1> <br />
-        1) Užpildykite žemiau esančią formą <br />
-        2) Spustelėkite mygtuką pateikti <br />
-        3) Perveskite sumą į žemiau nurodytą banko sąskaitą per 3 dienas. <br />
-        4) Norėdami perkelti nuorodą, įveskite savo vardą <br />
-            <br />
-        <p> <strong>Banko pavadinimas:</strong> SWEDBANK <br />
-        <strong>Vardas Pavardė:</strong> BIRUTĖ SUTKUVIENĖ <br />
-        <strong>Banko sąskaita:</strong> LT587300010105919132</p>
+        <h1 className="textEffect1"> Užsakymo Pateikimas </h1> 
+        <ol>
+          <li>Užpildykite žemiau esančią formą</li>
+          <li>Spustelėkite mygtuką pateikti </li>
+          <li>Perveskite sumą į banko sąskaitą per 3 dienas.Užpildę žemiau esančią užsakymo formą ir atlikę užsakymą, 
+        pamatysite mūsų banko sąskaitą.</li>
+          <li>Norėdami perkelti nuorodą, įveskite savo vardą</li>
+        </ol>
+
         Patvirtinus užsakymą, prekes išsiųsime per 3 dienas. <br /><br />
         Prekės siunčiamos su Omniva. Adreso laukelyje įveskite Omniva automatą, iš kurio norite 
         pasiimti prekę. Už siuntimą reikia sumokėti 3 eurus. Galite sumokėti 3 eurus prie visos 
         aukščiau nurodytos kainos ir atlikti pavedimą. <br /><br />
-
+        Jei turite klausimų: +37069630545 (Whatsapp/Telegram/Viber)
+        <p>
+          <i>International customers please click <span className="basketIntCus" onClick={() => navigate("/information")}>here</span></i>
+        </p>
         <form onSubmit={handleSubmit}>      
           <input name="name" type="text" className="feedback-input" 
             placeholder="Vardas Pavardė" value={fullName} onChange={e => setFullName(e.target.value)} required/>   

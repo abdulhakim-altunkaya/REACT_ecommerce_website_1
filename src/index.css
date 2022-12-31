@@ -269,13 +269,18 @@ scrollbar-width: none; */ /* Firefox *//*
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 20px;
-  font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.finalPrice{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 #cartListSumSmall {
   display: none;
 }
+
 .cartList {
   margin-top: 20px;
   display: flex;
@@ -393,9 +398,18 @@ textarea:required:focus:invalid {
   padding: 8px;
   border: 2px solid lightgrey;
   border-radius: 5px;
+  cursor: pointer;
 }
 #printBtn:hover {
   background-color: #f09819;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.basketIntCus {
+  background-color: lightgrey;
+  cursor: pointer;
+  padding:1px 5px;
+  border-radius: 5px;
 }
 
 /*CART ICON*/
@@ -572,12 +586,12 @@ background-color: #c67605;
 .aboutDiv a:active{
   color: pink;
 }
-#kiki {
-  color: blue;
-}
 
 #kikin {
   color: red;
+}
+.lowWebsiteArea li, .intShippingArea li {
+  margin-top: 7px;
 }
 /*CONTACT FORM AREA*/
 .contactFormDiv {

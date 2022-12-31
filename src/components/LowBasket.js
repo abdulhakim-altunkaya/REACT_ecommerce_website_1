@@ -64,6 +64,9 @@ function LowBasket() {
             <span>Data: {JSON.parse(orderMoment).slice(0,10)}</span>
             <span>Telefonas: {phone}</span>
             <span>Addresas: {address}</span>
+            <p> <strong>Banko pavadinimas:</strong> SWEDBANK <br />
+            <strong>Vardas Pavardė:</strong> BIRUTĖ SUTKUVIENĖ <br />
+            <strong>Banko sąskaita:</strong> LT587300010105919132</p>
           </div>
           <br />
           <div className='orderSuccessfulAreaDetails'>
@@ -74,9 +77,12 @@ function LowBasket() {
             <span>Date: {JSON.parse(orderMoment).slice(0,10)}</span>
             <span>Telephone: {phone}</span>
             <span>Address: {address}</span>
+            <p> <strong>Bank Name:</strong> SWEDBANK <br />
+            <strong>Name-Surname:</strong> BIRUTĖ SUTKUVIENĖ <br />
+            <strong>Account:</strong> LT587300010105919132</p>
           </div>
           <br />
-          <button id='printBtn' onClick={printOrder}> <i>print</i></button>
+          <button id='printBtn' onClick={printOrder}> <i>atsispausdinti / print</i></button>
           
         </div>
       )

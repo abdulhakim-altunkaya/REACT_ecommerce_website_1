@@ -60,10 +60,35 @@ function LowWebsite() {
 
       <div className="aboutDiv">
 
-          <h2>Soft. Tomatoes E-Commerce Solutions</p>
-          <p>if you would like same this website for your company, please reach :</p>
-          <span>E-mail: drysoftware1@gmail.com </span>
-          <span>Telephone(WhatsApp/Telegram/Viber)(Lithuania): +370 69630545</span> <br />
+          <h2>Soft. Tomatoes E-Commerce Solutions</h2>
+          <p>If you like this website and want the same for your company, please reach us:</p>
+          <span>E-mail: drysoftware1@gmail.com </span><br />
+          <span>Telephone(WhatsApp/Telegram/Viber)(Lithuania): +370 69630545</span> 
+          <br />
+          <br />
+          <div className='lowWebsiteArea'>
+            <h4>What we provide:</h4>  
+            <li>You are business owner, not a software person. We are well aware of this. We will take care of all details.</li>
+            <li>By working with us, our clients will make two payments. One payment will be done at the beginning of the project.
+              This will be between 150-300 Euros depending on image numbers and product numbers. If our client requests extra 
+              website customization, this will be done with extra charge. This package includes everything, even a name for your website. </li>
+            <li>Second payment is 25-50 Euros per month (We also have year plans with discount). This payment is needed because we do not 
+              want to create website and leave our clients alone. We will continue to assist you as much as possible. Secondly, e-commerce 
+              websites require special hosting with database support. We will use this monthly payment to pay for those services as well.
+              In summary, your monthly payment will cover these special services fee + assistance from us. And we are saying 25-50 Euros because
+              some websites require more database and hosting support. That's why this monthly price can be up to 50 Euros. Monthly 
+              payment will start after 30 days we deploy your website. </li>
+            <li>We will manage everything, including finding a name your website. You will only need to send us images 
+              and product description</li>
+            <li>We will not leave you alone. Our phones are open to you. The software engineer that will be assigned to 
+              you will help you as much as possible. </li>
+            <li>Our service is very ideal for especially small to medium businesses who would like to have their website. Finding a software
+              person working for you is very expensive actually. Something around 2000-3000 euros per month depending on the country.
+              As you can see, our service is much cheaper than this. We are also providing a better service compare to Wordpress and Shopify.
+              You might think that those companies are better but check their website please. You'll see how complicated and expensive they are.
+            </li>
+            <li>You decided to work with us? Next step is easy, just send us a whatsapp message. We will make this process smooth and easy.</li>
+          </div>
  
           <h4>Credits:</h4>
           Green Tick and Instagram icon: &nbsp;

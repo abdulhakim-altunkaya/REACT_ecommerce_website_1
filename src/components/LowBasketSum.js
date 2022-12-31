@@ -37,7 +37,10 @@ function LowBasketSum() {
       <div id='cartListSumBig'>
           <span>&nbsp;</span>
           <span>&nbsp;</span>
-          <span>Užsakymo suma: &nbsp; {basketSum} Euros</span>
+          <span className='finalPrice'>
+            <span>Omniva kaina: &nbsp; 3 Euros</span>
+            <span><strong>Užsakymo suma: &nbsp; {basketSum+3} Euros</strong></span>
+          </span>
           <span>&nbsp;</span>
       </div>
       <div id='cartListSumSmall'>
