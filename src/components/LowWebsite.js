@@ -60,7 +60,10 @@ function LowWebsite() {
 
       <div className="aboutDiv">
 
-
+          <h2>Soft. Tomatoes E-Commerce Solutions</p>
+          <p>if you would like same this website for your company, please reach :</p>
+          <span>E-mail: drysoftware1@gmail.com </span>
+          <span>Telephone(WhatsApp/Telegram/Viber)(Lithuania): +370 69630545</span> <br />
  
           <h4>Credits:</h4>
           Green Tick and Instagram icon: &nbsp;

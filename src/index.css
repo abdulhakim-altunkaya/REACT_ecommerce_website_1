@@ -572,7 +572,13 @@ background-color: #c67605;
 .aboutDiv a:active{
   color: pink;
 }
+#kiki {
+  color: blue;
+}
 
+#kikin {
+  color: red;
+}
 /*CONTACT FORM AREA*/
 .contactFormDiv {
   width: 50%;

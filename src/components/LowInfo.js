@@ -1,6 +1,7 @@
 import React from 'react'
 
 function LowInfo() {
+  let i = "n"
   return (
     <div>
 
@@ -12,10 +13,10 @@ function LowInfo() {
           <li>3. Jeigu prekė yra nenešiota, ją galite grąžinti per 14 darbo dienų nuo siuntos gavimo.</li>
         </p>
         <h4>Pinigų grąžinimo procedūra</h4>
-        <p> Jei jūsų grąžinamos prekės pristatomos kurjerio pagalba, mūsų darbuotojai įvertina, ar gaminiai grąžinti 
+        <p > Jei jūsų grąžinamos prekės pristatomos kurjerio pagalba, mūsų darbuotojai įvertina, ar gaminiai grąžinti 
           laikantis aukščiau nurodytų sąlygų. Jei sąlygų buvo nesilaikoma, pinigai grąžinami nebus. Jei sąlygų buvo laikomasi, 
           pinigai bus pervesti į jūsų banko sąskaitą ne vėliau kaip per 7 d. d. nuo grąžinamos prekės gavimo.</p>
-        <p>Nusipirkę netinkamos kokybės prekę, jūs turite teisę grąžinti tokią prekę mums. Tokiu atveju netinkamos kokybės 
+        <p id={`kiki${i}`}>Nusipirkę netinkamos kokybės prekę, jūs turite teisę grąžinti tokią prekę mums. Tokiu atveju netinkamos kokybės 
           prekė nemokamai pakeičiama į kokybišką prekę arba Jums grąžinami sumokėti pinigai Taisyklėse nustatyta tvarka.</p>
 
         <h4>International Orders</h4>
