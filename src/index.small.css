@@ -259,12 +259,11 @@
     #cartListSumBig {
       display: none;
     }
-    #cartListSumSmall {
+    .cartListSumSmall {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       font-size: 17px;
-      font-weight: bold;
       padding-top: 10px;
       padding-bottom: 10px;
     }
@@ -416,7 +415,11 @@
       .badge-warning[href] {
       background-color: #c67605;
       }
-      
+      .aboutDiv {
+        padding: 8px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
       
       /*FORM ELEMENT BASKET PAGE*/
       @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
