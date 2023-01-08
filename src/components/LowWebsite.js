@@ -101,10 +101,10 @@ function LowWebsite() {
           Button styles: <a href="https://getcssscan.com/css-buttons-examples">getcssscan</a>
           <br />
           Basket icon:
-          <a target="_blank" href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
-          </a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <a href="https://icons8.com/icon/81199/wicker-basket">Wicker Basket
+          </a> icon by <a href="https://icons8.com">Icons8</a>
           <br />
-          <a target="_blank" href="https://icons8.com/icon/LpsZKcJoQ4W3/arrow-left">Arrow Left</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <a href="https://icons8.com/icon/LpsZKcJoQ4W3/arrow-left">Arrow Left</a> icon by <a href="https://icons8.com">Icons8</a>
 
         
 
