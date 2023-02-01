@@ -1,6 +1,6 @@
 import React from 'react';
 import {kuprines} from "../images/kuprines/kuprines.js";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 
 function LowKupri() {
 
