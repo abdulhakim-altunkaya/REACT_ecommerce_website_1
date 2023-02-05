@@ -195,5 +195,35 @@ export const rankines = [
             fabric: "artificial leather",
         }
     },
+    {
+        number: "RA014A",
+        datanumber: "RA014",
+        category: "rankines",
+        title: 'Raganaitė 🧡🧙‍♀️🪄 Maža rankinė per petį',
+        image: 'RA014A',
+        price: 43,  
+        unit: 1,
+        description: "Maža rankinė per petį: aukštis 20 cm, ilgis 23 cm",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
 
+    {
+        number: "RA015A",
+        datanumber: "RA015",
+        category: "rankines",
+        title: 'Raganaitė 🧡🧙‍♀️🪄 Maža rankinė per petį 🖤🧡🖤',
+        image: 'RA015A',
+        price: 43,  
+        unit: 1,
+        description: "Maža rankinė per petį: aukštis 24 cm, ilgis 20 cm",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
 ]
