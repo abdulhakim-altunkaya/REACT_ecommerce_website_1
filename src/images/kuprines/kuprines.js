@@ -90,5 +90,20 @@ export const kuprines = [
             fabric: "artificial leather",
         }
     },
+    {
+        number: "KP014A",
+        datanumber: "KP014",
+        category: "kuprines",
+        title: 'Kuprinė-rankinė',
+        image: 'KP014A',
+        price: 55,
+        unit: 1,
+        description: "Kuprinė-rankinė. Išmatavimai: 36x30x9. Keturkampė kuprinė (gali būti skirta kompiuteriui) nešiojama kaip kuprinė ar rankinė (petnešos transformuojasi)",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
 
 ]
