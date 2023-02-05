@@ -6,7 +6,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Volkswagen klasikinis mikroautobusas piniginė',
         image: 'PN001A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Volkswagen klasikinis mikroautobusas piniginė",
         details: {
@@ -21,7 +21,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpi piniginė su katinėliu 🐈',
         image: 'PN002A',
-        price: 40,
+        price: 30,
         unit: 1,
         description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelės, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
         details: {
@@ -36,7 +36,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN003A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -51,7 +51,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN004A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -66,7 +66,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN005A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -81,7 +81,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN006A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -141,7 +141,7 @@ export const pinigines = [
         category: "pinigines",
         title: "Meksikietiško stiliaus piniginė",
         image: 'PN010A',
-        price: 40,
+        price: 30,
         unit: 1,
         description: "Meksikietiško stiliaus piniginė",
         details: {
@@ -156,7 +156,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN011A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -171,7 +171,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Mažojo princo piniginė',
         image: 'PN012A',
-        price: 40,
+        price: 30,
         unit: 1,
         description: "Mažojo princo piniginė",
         details: {
@@ -186,7 +186,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Katės piniginė',
         image: 'PN013A',
-        price: 40,
+        price: 44,
         unit: 1,
         description: "Katės piniginė",
         details: {
@@ -201,7 +201,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN014A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -216,7 +216,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Baltas šuns piniginė',
         image: 'PN015A',
-        price: 40,
+        price: 44,
         unit: 1,
         description: "Baltas šuns piniginė",
         details: {
@@ -231,7 +231,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN016A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -246,7 +246,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN017A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -276,7 +276,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
         image: 'PN019A',
-        price: 43,
+        price: 45,
         unit: 1,
         description: "Išmatavimai: ilgis 19 cm, aukštis 10 cm. Sudėtyje nėra gyvūninės kilmės produktų. 12 skyrelių kortelėms, 6 papildomi skyreliai, 2 skyreliai popieriniams pinigams, 2 skyreliai monetoms.",
         details: {
@@ -291,7 +291,7 @@ export const pinigines = [
         category: "pinigines",
         title: 'Itin talpi piniginė su katinėliu 💜🐈',
         image: 'PN020A',
-        price: 40,
+        price: 30,
         unit: 1,
         description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelėms, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
         details: {
@@ -300,5 +300,79 @@ export const pinigines = [
             fabric: "artificial leather",
         }
     },
-
+    {
+        number: "PN021A",
+        datanumber: "PN021",
+        category: "pinigines",
+        title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
+        image: 'PN021A',
+        price: 45,
+        unit: 1,
+        description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelėms, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
+    {
+        number: "PN022A",
+        datanumber: "PN022",
+        category: "pinigines",
+        title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
+        image: 'PN022A',
+        price: 45,
+        unit: 1,
+        description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelėms, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
+    {
+        number: "PN023A",
+        datanumber: "PN023",
+        category: "pinigines",
+        title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
+        image: 'PN023A',
+        price: 45,
+        unit: 1,
+        description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelėms, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
+    {
+        number: "PN024A",
+        datanumber: "PN024",
+        category: "pinigines",
+        title: 'Itin talpios ir patogios eko odos piniginės ♥️❤️♥️',
+        image: 'PN024A',
+        price: 45,
+        unit: 1,
+        description: "Išmatavimai: ilgis - 14 cm, aukštis 11 cm, atidarius - ilgis apie 28 cm. Sudėtyje nėra gyvūninės kilmės produktų. Viduje 5 skyreliai kortelėms, 1 permatomas skyrius ID kortelei, popierinių pinigų skyrius, viena didelė monetų kišenėlė",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
+    {
+        number: "PN025A",
+        datanumber: "PN025",
+        category: "pinigines",
+        title: 'Frida Kahlo piniginė 🌷',
+        image: 'PN025A',
+        price: 27,
+        unit: 1,
+        description: "šmatavimai: aukštis - 9,75 cm, ilgis -19.5 cm",
+        details: {
+            color: "orange",
+            height: "123 metre",
+            fabric: "artificial leather",
+        }
+    },
 ]
