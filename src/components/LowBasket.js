@@ -64,9 +64,8 @@ function LowBasket() {
             <span>Data: {JSON.parse(orderMoment).slice(0,10)}</span>
             <span>Telefonas: {phone}</span>
             <span>Addresas: {address}</span>
-            <p> <strong>Banko pavadinimas:</strong> WISE <br />
-            <strong>Vardas Pavardė:</strong> Abdulhakim Altunkaya <br />
-            <strong>Banko sąskaita:</strong> BE71 9672 3350 8769</p>
+            <p> Banko sąskaitos informaciją atsiųsime Jūsų el. Arba galite mums paskambinti ir paprašyti. </p><br />
+
           </div>
           <br />
           <div className='orderSuccessfulAreaDetails'>
@@ -77,9 +76,8 @@ function LowBasket() {
             <span>Date: {JSON.parse(orderMoment).slice(0,10)}</span>
             <span>Telephone: {phone}</span>
             <span>Address: {address}</span>
-            <p> <strong>Bank Name:</strong> WISE <br />
-            <strong>Name-Surname:</strong> Abdulhakim Altunkaya <br />
-            <strong>Account:</strong> BE71 9672 3350 8769</p>
+            <p> We will send bank account info to your e-mail. Or you can call us to request it. </p><br />
+
           </div>
           <br />
           <button id='printBtn' onClick={printOrder}> <i>atsispausdinti / print</i></button>
