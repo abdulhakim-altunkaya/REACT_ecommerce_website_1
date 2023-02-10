@@ -12,6 +12,7 @@ import LowItemRanki from "./LowItemRanki";
 import LowItemPini from './LowItemPini';
 import LowTest from './LowTest';
 import LowWebsite from "./LowWebsite";
+import LowAdmin from "./LowAdmin";
 
 function Lowerbar() {
   
@@ -31,6 +32,7 @@ function Lowerbar() {
           <Route path="/contact" element={ <LowContact /> } />
           <Route path="/test" element={ <LowTest /> } />
           <Route path="/website" element={ <LowWebsite /> } />
+          <Route path="/admin" element={ <LowAdmin /> } />
         </Routes>
 
 
