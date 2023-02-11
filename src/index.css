@@ -692,5 +692,11 @@ background-color: #c67605;
   width: 50%;
   word-wrap: break-word;
 }
+.smallAdminOrders {
+  margin-top: 0px;
+  background-color: rgb(152, 237, 254);
+  padding: 6px;
+  border-radius: 6px;
+}
 
 }

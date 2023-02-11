@@ -28,7 +28,7 @@ function LowAdmin() {
 
     return (
         <div>
-            
+            <br />
             <button onClick={handleClick} className="detailButton">DISPLAY ORDERS</button>
 
 
@@ -46,15 +46,12 @@ function LowAdmin() {
                         </div>
                         <div className='adminOrders'>
                             <span>{JSON.parse(JSON.stringify(order.Order)).map( (item, index) => (
-                                <ul key={index} style={{"marginTop": 0}}> 
-                                    <li>
-                                        <strong>Item: </strong> {JSON.parse(item).title}, <br />
-                                        <strong>Price: </strong> {JSON.parse(item).price}, <br />
-                                        <strong>Unit: </strong> {JSON.parse(item).unit}, <br />
-                                        <strong>Item ID: </strong> {JSON.parse(item).number}, <br />
-                                    
-                                    </li> 
-                                </ul>
+                                <p key={index} className="smallAdminOrders" > 
+                                    <strong>Item: </strong> {JSON.parse(item).title}, <br />
+                                    <strong>Price: </strong> {JSON.parse(item).price}, <br />
+                                    <strong>Unit: </strong> {JSON.parse(item).unit}, <br />
+                                    <strong>Item ID: </strong> {JSON.parse(item).number}, <br />
+                                </p>
                             ))}</span>
 
 

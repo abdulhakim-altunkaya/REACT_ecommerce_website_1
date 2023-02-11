@@ -664,4 +664,27 @@
       .button-87:active {
         transform: scale(0.95);
       }
+
+      .adminOrderMain {
+        background-color: lightgreen;
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        font-family: "Quicksand", sans-serif;
+      }
+      
+      .adminOrders {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        word-wrap: break-word;
+      }
+      .smallAdminOrders {
+        margin-left: 20px;
+        background-color: rgb(152, 237, 254);
+        padding: 6px;
+        border-radius: 6px;
+      }
 }
