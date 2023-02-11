@@ -676,5 +676,21 @@ background-color: #c67605;
   transform: scale(0.95);
 }
 
+.adminOrderMain {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.adminOrders {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  word-wrap: break-word;
+}
 
 }
