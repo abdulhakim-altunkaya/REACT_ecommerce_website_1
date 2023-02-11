@@ -42,7 +42,7 @@ function LowAdmin() {
                             <span><strong>Address: </strong>  {order.Address}</span>
                             <span><strong>E-mail: </strong>  {order.Email}</span>
                             <span><strong>Telephone: </strong>  {order.Telephone}</span>
-                            <span><strong>Date: </strong>  {order.Date}</span>  
+                            <span><strong>Date: </strong>  {order.Date.slice(1,11)}</span>  
                         </div>
                         <div className='adminOrders'>
                             <span>{JSON.parse(JSON.stringify(order.Order)).map( (item, index) => (
